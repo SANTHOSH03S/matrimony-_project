@@ -1,0 +1,99 @@
+
+.Basic-search{
+    display: none;
+}
+.Advanced-search{
+    display: none;
+}
+.keyword-search{
+    display: none;
+}
+.location-search{
+    display: none;
+}
+.occupation-search{
+    display: none;
+}
+  h1 {
+    color: #333;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    background: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background: #ff7500;
+  }
+  
+  .search-form, .search-by-id {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select, input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  span {
+    margin: 0 10px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-search {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .btn-saved {
+    background: #0069d9;
+    color: #fff;
+  }
+  
+  .search-by-id {
+    margin-bottom: 30px;
+    width: 50%;
+    
+  }
+  
+  .btn-search-id {
+    margin-top: 10px;
+    background: #28a745;
+    color: #fff;
+    width: 100%;
+
+  }
+  

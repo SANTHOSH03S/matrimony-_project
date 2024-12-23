@@ -20,3 +20,11 @@ function profileImage() {
   alert('Photo Successfully Uploaded');
   document.getElementById('profileModal').style.display = 'none';
 }
+function Viewprofile(){
+  document.getElementById('profile').style.display="block";
+  document.getElementById('edit_profile').style.display='none';
+}
+function EditProfile(){
+  document.getElementById('edit_profile').style.display='block';
+  document.getElementById('profile').style.display="none";
+}

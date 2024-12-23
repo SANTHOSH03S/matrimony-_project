@@ -39,8 +39,8 @@
           <li class="dropdown"><a href="profile.html"><span>My Home</span></a>
           <li class="dropdown"><a href="#"><span>My Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="viewprofile.html">View profile</a></li>
-              <li><a href="#">Edit Profile</a></li>
+              <li><a href="viewprofile.html" onclick="ViewProfile()" >View profile</a></li>
+              <li><a href="#" onclick="EditProfile()">Edit Profile</a></li>
               <li><a href="#">My Saved Searches</a></li>
               <li><a href="#">My Message</a></li>
               <li><a href="#">My Express Interest</a></li>
@@ -108,7 +108,7 @@
   </header>
 
       <!-- Basic Details Section -->
-  <main class="main">
+  <main class="profile" id="profile" >
     <div class="profile-container">
       <div class="photo-upload-card">
         <div class="photo-upload-header">
@@ -265,6 +265,291 @@
     </div>
 
   </main>
+
+  <!-----------------------Edit profile----------------------->
+  <main class="edit-profile" id="edit_profile">
+    <h2>Edit Profile</h2>
+    <div class="photo-upload-card">
+      <div class="photo-upload-header">
+        <h2><i class="fa fa-camera"></i> Upload Profile Photo</h2>
+      </div>
+      <div class="photo-upload-content">
+        <!-- Preview of the uploaded photo -->
+        <div class="photo-preview">
+          <img src="assets/images/img4.png" alt="Profile Photo" class="profile-photo" id="photoPreview">
+        </div>
+        <!-- File input for photo upload -->
+        <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+        <button class="upload-btn" onclick="document.getElementById('photoUpload').click();">
+          <i class="fa fa-upload"></i> Upload Photo
+        </button>
+      </div>
+    </div>
+    
+
+    <div class="section">
+        <div class="details-header">
+            <h3>Basic Details</h3>
+            <button class="edit-btn">Edit</button>
+        </div>
+        <div class="details-content">
+            <div class="detail-row"><span class="label">User Name:</span><input type="text" value="Saanvi Acharya"></div>
+            <div class="detail-row"><span class="label">Email:</span><input type="email" value="userfemale1@gamil.com"></div>
+            <div class="detail-row"><span class="label">Mobile No:</span><input type="tel" value="+91-9328530201"></div>
+            <div class="detail-row"><span class="label">Gender:</span>
+                <select>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="details-header">
+            <h3>Other Details</h3>
+            <button class="edit-btn">Edit</button>
+        </div>
+        <div class="details-content">
+            <div class="detail-row"><span class="label">Date of Birth:</span><input type="date" value="1975-02-05"></div>
+            <div class="detail-row"><span class="label">Marital Status:</span>
+                <select>
+                    <option value="Never Married">Never Married</option>
+                    <option value="Married">Married</option>
+                </select>
+            </div>
+            <div class="detail-row"><span class="label">Mother Tongue:</span><input type="text" value="Angika"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="details-header">
+            <h3>About Me</h3>
+            <button class="edit-btn">Edit</button>
+        </div>
+        <div class="details-content">
+            <textarea id="aboutMe" rows="4" cols="50">Write something about yourself. For example, what kind of person you are, about your personality, hobbies, and family, etc.</textarea>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="details-header">
+            <h3>Religion Information</h3>
+            <button class="edit-btn">Edit</button>
+        </div>
+        <div class="details-content">
+            <div class="detail-row"><span class="label">Religion:</span>
+                <select>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Christian">Christian</option>
+                </select>
+            </div>
+            <div class="detail-row"><span class="label">Caste:</span><input type="text" value="24 Manai Telugu Chettiar"></div>
+            <div class="detail-row"><span class="label">Sub Caste:</span><input type="text" value="Not Available"></div>
+            <div class="detail-row"><span class="label">Willing to marry in other caste:</span>
+                <select>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+      <div class="details-header">
+        <h3><i class="fa fa-graduation-cap"></i> Education / Profession Information</h3>
+        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+      </div>
+      <div class="details-content">
+        <div class="detail-row">
+          <label for="highest-education">Highest Education:</label>
+          <input type="text" id="highest-education" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="additional-degree">Additional Degree:</label>
+          <input type="text" id="additional-degree" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="employed-in">Employed in:</label>
+          <input type="text" id="employed-in" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="occupation">Occupation:</label>
+          <input type="text" id="occupation" value="Civil Engineer" />
+        </div>
+        <div class="detail-row">
+          <label for="annual-income">Annual Income:</label>
+          <input type="text" id="annual-income" value="13,00,000" />
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="section">
+      <div class="details-header">
+        <h3><i class="fa fa-graduation-cap"></i> Family Details</h3>
+        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+      </div>
+      <div class="details-content">
+        <div class="detail-row">
+          <label for="family-type">Family Type:</label>
+          <input type="text" id="family-type" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="family-value">Family Value:</label>
+          <input type="text" id="family-value" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="father-occupation">Father Occupation:</label>
+          <input type="text" id="father-occupation" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="mother-occupation">Mother Occupation:</label>
+          <input type="text" id="mother-occupation" value="Civil Engineer" />
+        </div>
+        <div class="detail-row">
+          <label for="married-brothers">Married Brothers:</label>
+          <input type="number" id="married-brothers" value="13" />
+        </div>
+        <div class="detail-row">
+          <label for="married-sisters">Married Sisters:</label>
+          <input type="number" id="married-sisters" value="13" />
+        </div>
+        <div class="detail-row">
+          <label for="family-status">Family Status:</label>
+          <input type="text" id="family-status" value="13,00,000" />
+        </div>
+        <div class="detail-row">
+          <label for="father-name">Father Name:</label>
+          <input type="text" id="father-name" value="13,00,000" />
+        </div>
+        <div class="detail-row">
+          <label for="mother-name">Mother Name:</label>
+          <input type="text" id="mother-name" value="13,00,000" />
+        </div>
+        <div class="detail-row">
+          <label for="no-of-brothers">No. of Brothers:</label>
+          <input type="number" id="no-of-brothers" value="13" />
+        </div>
+        <div class="detail-row">
+          <label for="no-of-sisters">No. of Sisters:</label>
+          <input type="number" id="no-of-sisters" value="13" />
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="details-header">
+        <h3><i class="fa fa-graduation-cap"></i> Location Information</h3>
+        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+      </div>
+      <div class="details-content">
+        <div class="detail-row">
+          <label for="country-living">Country Living In:</label>
+          <input type="text" id="country-living" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="state-living">State Living In:</label>
+          <input type="text" id="state-living" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="city-living">City Living In:</label>
+          <input type="text" id="city-living" value="Government" />
+        </div>
+      </div>
+    </div>
+    
+    <!--------- Habits And Hobbies ----------->
+    <div class="section">
+      <div class="details-header">
+        <h3><i class="fa fa-graduation-cap"></i> Habits And Hobbies</h3>
+        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+      </div>
+      <div class="details-content">
+        <div class="detail-row">
+          <label for="eating-habits">Eating Habits:</label>
+          <input type="text" id="eating-habits" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="drinking-habits">Drinking Habits:</label>
+          <input type="text" id="drinking-habits" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="smoking-habits">Smoking Habits:</label>
+          <input type="text" id="smoking-habits" value="Government" />
+        </div>
+      </div>
+    </div>
+    
+    <!--------- Physical Attributes ----------->
+    <div class="section">
+      <div class="details-header">
+        <h3><i class="fa fa-graduation-cap"></i> Physical Attributes</h3>
+        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+      </div>
+      <div class="details-content">
+        <div class="detail-row">
+          <label for="height">Height:</label>
+          <input type="text" id="height" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="weight">Weight:</label>
+          <input type="text" id="weight" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="body-type">Body Type:</label>
+          <input type="text" id="body-type" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="physical-status">Physical Status:</label>
+          <input type="text" id="physical-status" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="complexion">Complexion:</label>
+          <input type="text" id="complexion" value="Government" />
+        </div>
+      </div>
+    </div>
+    
+    <!--------- Horoscope Information ----------->
+    <div class="section">
+      <div class="details-header">
+        <h3><i class="fa fa-graduation-cap"></i> Horoscope Information</h3>
+        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+      </div>
+      <div class="details-content">
+        <div class="detail-row">
+          <label for="have-dosh">Have Dosh?</label>
+          <input type="text" id="have-dosh" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="dosh-type">Dosh Type:</label>
+          <input type="text" id="dosh-type" value="B Arch" />
+        </div>
+        <div class="detail-row">
+          <label for="raasi">Raasi/Moonsign:</label>
+          <input type="text" id="raasi" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="star">Star:</label>
+          <input type="text" id="star" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="birth-time">Birth Time:</label>
+          <input type="text" id="birth-time" value="Government" />
+        </div>
+        <div class="detail-row">
+          <label for="birth-place">Birth Place:</label>
+          <input type="text" id="birth-place" value="Government" />
+        </div>
+      </div>
+    </div>
+    
+    
+</main>
+
+
+
 
   <footer class="footer footer-dark section-pt position-relative">
     <div class="footer-content pb-3">

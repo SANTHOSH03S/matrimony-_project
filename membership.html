@@ -21,11 +21,14 @@
   <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor-profile/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor-profile/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
   <!-- Main CSS File -->
   <link href="assets/css/profile.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/search.css">
+  <link rel="stylesheet" href="assets/css/membership.css">
   <!----script -->
   <script src="assets/js/profile.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/membership.js"></script>
 </head>
 
 <body class="index-page">
@@ -36,10 +39,7 @@
         </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="profile.html"><span>My Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-            </ul>
+          <li class="dropdown"><a href="profile.html"><span>My Home</span></a>
           <li class="dropdown"><a href="#"><span>My Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="viewprofile.html">View profile</a></li>
@@ -54,19 +54,18 @@
           </li>
           <li class="dropdown"><a href="#"><span>Search</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="search.html">Quick Search</a></li>
-              <li><a href="#">Basic Search</a></li>
-              <li><a href="#">Advanced Search</a></li>
-              <li><a href="#">Keyword Search</a></li>
-              <li><a href="#">Location Search</a></li>
-              <li><a href="#">Occupation Search</a></li>
-
+              <li><a href="#" onclick="Quick_Search()">Quick Search</a></li>
+              <li><a href="#" onclick="Basic_Search()">Basic Search</a></li>
+              <li><a href="#" onclick="Advanced_Search()">Advanced Search</a></li>
+              <li><a href="#" onclick="Keyword_Search()" >Keyword Search</a></li>
+              <li><a href="#" onclick="Location_Search()">Location Search</a></li>
+              <li><a href="#" onclick="Occupation_Search()">Occupation Search</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Membership</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="membership.html">Membership Plans</a></li>
-              <li><a href="#">Current Plan</a></li>
+              <li><a href="#" onclick="membership()">Membership Plans</a></li>
+              <li><a href="#" onclick="currentplan()">Current Plan</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Profile Details</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -112,50 +111,77 @@
 
   <main class="main">
 
-    <!-- upload photo Section -->
-    <section id="hero" class="hero section light-background">
-  <div class="upload-card">
-    <div class="image-preview" id="imagePreview">
-      <img src="assets/images/profile-icon.png"  id="select_image" width="150" height="auto"  />
-    </div>
-    <a  onclick="select_image()"><h2>Change Profile Picture</h2></a>
-  </div>
-  <div class="profile-card">
-    <div class="profile-header">
-      <h2>Welcome, <span>Arjun Mehta</span> <small>(IN)</small></h2>
-      <p>Your profile is <strong>65% complete</strong></p>
-      <h6>Age: 29</h6>
-      <h6>Profession: Software Engineer</h6>
-      <h6>Location: Bengaluru, IN</h6>
-    </div>
-    <div class="progress-bar">
-      <div class="progress" style="width: 65%;"></div>
-    </div>
-    <small>Tip: Add more details to improve your visibility!</small>
+    <div class="membership-plans" id="membership_plans">
+        <h1>Membership Plans</h1>
+        <p>Select from our multiple membership plans to unlock premium features and benefits.</p>
+        <div class="plans-container">
+            <!-- Plan Card -->
+            <div class="plan-card">
+                <h2>Platinum Membership</h2>
+                <p class="price">Rs. 1000</p>
+                <ul>
+                    <li>Duration: 365 days</li>
+                    <li>Messages: Unlimited</li>
+                    <li>Content Views: 2000</li>
+                    <li>Live Chat: Yes</li>
+                    <li>Profile Views: Unlimited</li>
+                </ul>
+                <button>Select</button>
+            </div>
 
-  </div>
-  <!-- Modal Structure -->
-   <center>
-  <div id="profileModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" id="closeModalBtn" onclick="closeModalBtn()">&times;</span>
-      <h2>Edit Profile Picture</h2>
-      <p>Select an image and then click the submit button to upload the image.</p>
-        <label for="file" style="cursor: pointer; color:red; font-size:large; ">Upload Image</label>  
-        <img id="select_card_image" width="150" height="auto" style="margin-left:100px; border-radius :10px;" />
-      <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
-      <button class="submit-btn" onclick="profileImage()" >Submit</button>
+            <!-- Add more plan cards -->
+            <div class="plan-card">
+                <h2>Free</h2>
+                <p class="price">Rs. 0</p>
+                <ul>
+                    <li>Duration: 10 days</li>
+                    <li>Messages: 10</li>
+                    <li>Content Views: 10</li>
+                    <li>Live Chat: No</li>
+                    <li>Profile Views: 10</li>
+                </ul>
+                <button>Select</button>
+            </div>
+
+            <!-- Repeat cards as needed -->
+        </div>
     </div>
-  </div>
-  </center>
-    
-  
-</section>
-
-<!-- /upload photo -->
-    
-
-   
+    <div class="current-plan" id="current_plan" >
+        <h1>Current Plan Details</h1>
+        <p>You can check your current membership plan details and recommended plan suggestions with that.</p>
+        <div class="plan-details">
+            <div class="plan-header">
+                <h2>Free</h2>
+            </div>
+            <div class="plan-info">
+                <div class="detail-item">
+                    <h3>Duration</h3>
+                    <p>10 Days</p>
+                    <p class="remaining">2 Days</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Messages</h3>
+                    <p>0</p>
+                    <p class="remaining">0 remaining</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Contact View</h3>
+                    <p>0</p>
+                    <p class="remaining">0 remaining</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Live Chat</h3>
+                    <p>No</p>
+                    <p class="remaining">No</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Profile View</h3>
+                    <p>0</p>
+                    <p class="remaining">0 remaining</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
   </main>
 

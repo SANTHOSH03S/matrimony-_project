@@ -73,6 +73,8 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  font-size: 17px;
+  font-weight: bold;
 }
 
 /* Pulsating Play Button
@@ -808,7 +810,7 @@ section,
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     margin-bottom: 30px;
   }

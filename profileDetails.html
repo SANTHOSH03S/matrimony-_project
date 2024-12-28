@@ -1,484 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Profile</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor-profile/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor-profile/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor-profile/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor-profile/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Main CSS File -->
-  <link href="assets/css/profile.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/search.css">
-  <link rel="stylesheet" href="assets/css/membership.css">
-  <link rel="stylesheet" href="assets/css/profileDetails.css">
-  <!----script -->
-  <script src="assets/js/profile.js"></script>
-  <script src="assets/js/search.js"></script>
-  <script src="assets/js/membership.js"></script>
-  <script src="assets/js/profileDetails.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css"
+      integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor-profile/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor-profile/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor-profile/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor-profile/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link href="assets/css/profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/search.css" />
+    <link rel="stylesheet" href="assets/css/membership.css" />
+    <link rel="stylesheet" href="assets/css/profileDetails.css" />
+    <!----script -->
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/membership.js"></script>
+    <script src="assets/js/profileDetails.js"></script>
+  </head>
 
-<body class="index-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
         <a class="navbar-brand" href="index.html">
-            <img class="navbar-brand-item" style="height: 35px;" src="assets/images/logo.png" alt="Faster">
+          <img
+            class="navbar-brand-item"
+            style="height: 35px"
+            src="assets/images/logo.png"
+            alt="Faster"
+          />
         </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li class="dropdown"><a href="profile.html"><span>My Home</span></a>
-          <li class="dropdown"><a href="#"><span>My Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="viewprofile.html">View profile</a></li>
-              <li><a href="#">Edit Profile</a></li>
-              <li><a href="#">My Saved Searches</a></li>
-              <li><a href="#">My Message</a></li>
-              <li><a href="#">My Express Interest</a></li>
-              <li><a href="#">Manage Photo</a></li>
-              <li><a href="#">Manage Horoscope</a></li>
-              <li><a href="#">Manage Document</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Search</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#" onclick="Quick_Search()">Quick Search</a></li>
-              <li><a href="#" onclick="Basic_Search()">Basic Search</a></li>
-              <li><a href="#" onclick="Advanced_Search()">Advanced Search</a></li>
-              <li><a href="#" onclick="Keyword_Search()" >Keyword Search</a></li>
-              <li><a href="#" onclick="Location_Search()">Location Search</a></li>
-              <li><a href="#" onclick="Occupation_Search()">Occupation Search</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Membership</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#" onclick="membership()">Membership Plans</a></li>
-              <li><a href="#" onclick="currentplan()">Current Plan</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Profile Details</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#" onclick="Shortlisted()">Shortlisted Profile </a></li>
-              <li><a href="#" onclick="Blocklisted()">Blocked Profile </a></li>
-              <li><a href="#" onclick="ProfileViewedBy()">My Profile Viewed By </a></li>
-              <li><a href="#" onclick="Visitedprofile()">I Visited Profile </a></li>
-              <li><a href="#">My mobile No Viewed By </a></li>
-              <li><a href="#">Photo Password Request </a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-gear fa-xl" style="color: #6b6868;"></i></span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Photo setting </a></li>
-              <li><a href="#">Contact View setting </a></li>
-              <li><a href="#">Change Password </a></li>
-              <li><a href="#">Logout </a></li>
-            </ul>
-          </li>
-          <li><p></p></li>
-          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-user fa-xl" style="color: #6b6868;"></i></span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <div class="modern-user-profile" id="user-profile">
-                <div class="profile-pic-container">
-                  <img src="assets/images/img4.png" alt="User Profile" class="profile-pic" />
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li class="dropdown">
+              <a href="profile.html"><span>My Home</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>My Profile</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="viewprofile.html">View profile</a></li>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="#">My Saved Searches</a></li>
+                <li><a href="#">My Message</a></li>
+                <li><a href="#">My Express Interest</a></li>
+                <li><a href="#">Manage Photo</a></li>
+                <li><a href="#">Manage Horoscope</a></li>
+                <li><a href="#">Manage Document</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Search</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#" onclick="Quick_Search()">Quick Search</a></li>
+                <li><a href="#" onclick="Basic_Search()">Basic Search</a></li>
+                <li>
+                  <a href="#" onclick="Advanced_Search()">Advanced Search</a>
+                </li>
+                <li>
+                  <a href="#" onclick="Keyword_Search()">Keyword Search</a>
+                </li>
+                <li>
+                  <a href="#" onclick="Location_Search()">Location Search</a>
+                </li>
+                <li>
+                  <a href="#" onclick="Occupation_Search()"
+                    >Occupation Search</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Membership</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#" onclick="membership()">Membership Plans</a></li>
+                <li><a href="#" onclick="currentplan()">Current Plan</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Profile Details</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="#" onclick="Shortlisted()">Shortlisted Profile </a>
+                </li>
+                <li>
+                  <a href="#" onclick="Blocklisted()">Blocked Profile </a>
+                </li>
+                <li>
+                  <a href="#" onclick="ProfileViewedBy()"
+                    >My Profile Viewed By
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onclick="Visitedprofile()">I Visited Profile </a>
+                </li>
+                <li><a href="#">My mobile No Viewed By </a></li>
+                <li><a href="#">Photo Password Request </a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span
+                  ><i
+                    class="fa-solid fa-gear fa-xl"
+                    style="color: #6b6868"
+                  ></i></span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Photo setting </a></li>
+                <li><a href="#">Contact View setting </a></li>
+                <li><a href="#">Change Password </a></li>
+                <li><a href="#">Logout </a></li>
+              </ul>
+            </li>
+            <li><p></p></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span
+                  ><i
+                    class="fa-solid fa-user fa-xl"
+                    style="color: #6b6868"
+                  ></i></span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <div class="modern-user-profile" id="user-profile">
+                  <div class="profile-pic-container">
+                    <img
+                      src="assets/images/img4.png"
+                      alt="User Profile"
+                      class="profile-pic"
+                    />
+                  </div>
+                  <div class="profile-details">
+                    <h4>Saanvi Acharya</h4>
+                    <p>ID: <span class="user-id">IN1</span></p>
+                    <p>
+                      <i class="fas fa-clock"></i>Last Login: 08:24 7th December
+                      2024
+                    </p>
+                    <p>
+                      <i class="fas fa-crown"></i> Membership:
+                      <span class="membership-status">Paid</span>
+                    </p>
+                  </div>
                 </div>
-                <div class="profile-details">
-                  <h4>Saanvi Acharya</h4>
-                  <p>ID: <span class="user-id">IN1</span></p>
-                  <p><i class="fas fa-clock"></i>Last Login: 08:24 7th December 2024 </p>
-                  <p><i class="fas fa-crown"></i> Membership: <span class="membership-status">Paid</span></p>
-                </div>
-              </div>
-            </ul>
-          </li>
-         
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
+              </ul>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-  <main class="main">
+    <main class="main">
       <div class="Shortlist-profile" id="Shortlist_profile">
-          <div class="header">
-              <h1>சார்ட்லிஸ்ட் செய்யப்பட்ட உறுப்பினர் சுயவிவரம்</h1>
-              <p>நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும் இங்கே சரிபார்க்கலாம்.</p>
+        <div class="header">
+          <h1>சார்ட்லிஸ்ட் செய்யப்பட்ட உறுப்பினர் சுயவிவரம்</h1>
+          <p>
+            நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும்
+            இங்கே சரிபார்க்கலாம்.
+          </p>
+        </div>
+
+        <div class="spotlight-box">
+          <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
+          <p>
+            நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும்
+            ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும். இது 10 மடங்கு வேகமான முடிவுகளை
+            அளிக்கிறது.
+          </p>
+          <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
+        </div>
+        <center>
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img4.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">ஆரவ் ஏ (IN2)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
+              <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
+              <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
+              <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
           </div>
-  
-          <div class="spotlight-box">
-              <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
-              <p>
-                  நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும் ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும்.
-                  இது 10 மடங்கு வேகமான முடிவுகளை அளிக்கிறது.
-              </p>
-              <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
+
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img5.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
+              <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
+              <div><strong>தாய்மொழி:</strong> இந்தி</div>
+              <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
           </div>
-          <center>
-              <div class="profile-card">
-                  <div class="profile-header">
-                      <img src="assets/images/img4.png" alt="Profile Image" class="profile-img">
-                      <div class="profile-name">ஆரவ் ஏ (IN2)</div>
-                  </div>
-                  <div class="profile-details">
-                      <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
-                      <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
-                      <div><strong>மதம்:</strong> இந்து</div>
-                      <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                      <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
-                      <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
-                      <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
-                      <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
-                  </div>
-                  <div class="profile-actions">
-                      <button class="btn message">📩 செய்தி அனுப்பு</button>
-                      <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                      <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                  </div>
-              </div>
-  
-              <div class="profile-card">
-                  <div class="profile-header">
-                      <img src="assets/images/img5.png" alt="Profile Image" class="profile-img">
-                      <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
-                  </div>
-                  <div class="profile-details">
-                      <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
-                      <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
-                      <div><strong>மதம்:</strong> இந்து</div>
-                      <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                      <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
-                      <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
-                      <div><strong>தாய்மொழி:</strong> இந்தி</div>
-                      <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
-                  </div>
-                  <div class="profile-actions">
-                      <button class="btn message">📩 செய்தி அனுப்பு</button>
-                      <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                      <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                  </div>
-              </div>
-              </center>
-  
-              <div class="pagination">
-                  <button class="page-btn" data-page="1">1</button>
-                  <button class="page-btn" data-page="2">2</button>
-                  <button class="page-btn" data-page="3">3</button>
-                  <button class="page-btn" data-page="4">...</button>
-                  <button class="page-btn" data-page="next">&raquo;</button>
-              </div>
-  
-          </div>
+        </center>
+
+        <div class="pagination">
+          <button class="page-btn" data-page="1">1</button>
+          <button class="page-btn" data-page="2">2</button>
+          <button class="page-btn" data-page="3">3</button>
+          <button class="page-btn" data-page="4">...</button>
+          <button class="page-btn" data-page="next">&raquo;</button>
+        </div>
+      </div>
       <div class="Blocklist-profile" id="Blocklist_profile">
-              <div class="header">
-                  <h1>தடைப்பட்ட உறுப்பினர் சுயவிவரம்</h1>
-                  <p>நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும் இங்கே சரிபார்க்கலாம்.</p>
-              </div>
-  
-              <div class="spotlight-box">
-                  <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
-                  <p>
-                      நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும் ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும்.
-                      இது 10 மடங்கு வேகமான முடிவுகளை அளிக்கிறது.
-                  </p>
-                  <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
-              </div>
-              <center>
-                  <div class="profile-card">
-                      <div class="profile-header">
-                          <img src="assets/images/img4.png" alt="Profile Image" class="profile-img">
-                          <div class="profile-name">ஆரவ் ஏ (IN2)</div>
-                      </div>
-                      <div class="profile-details">
-                          <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
-                          <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
-                          <div><strong>மதம்:</strong> இந்து</div>
-                          <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                          <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
-                          <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
-                          <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
-                          <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
-                      </div>
-                      <div class="profile-actions">
-                          <button class="btn message">📩 செய்தி அனுப்பு</button>
-                          <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                          <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                      </div>
-                  </div>
-  
-                  <div class="profile-card">
-                      <div class="profile-header">
-                          <img src="assets/images/img5.png" alt="Profile Image" class="profile-img">
-                          <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
-                      </div>
-                      <div class="profile-details">
-                          <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
-                          <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
-                          <div><strong>மதம்:</strong> இந்து</div>
-                          <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                          <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
-                          <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
-                          <div><strong>தாய்மொழி:</strong> இந்தி</div>
-                          <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
-                      </div>
-                      <div class="profile-actions">
-                          <button class="btn message">📩 செய்தி அனுப்பு</button>
-                          <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                          <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                      </div>
-                  </div>
-                  </center>
-            </div>
-       <div class="Viewed-my-profile" id="Viewed_my_profile">
-                    <div class="header">
-                        <h1>என் சுயவிவரத்தைப் பார்த்தவர்கள்</h1>
-                        <p>நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும் இங்கே சரிபார்க்கலாம்.</p> 
-                    </div>
-                
-                    <div class="spotlight-box">
-                        <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
-                        <p>
-                            நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும் ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும்.
-                            இது 10 மடங்கு வேகமான முடிவுகளை அளிக்கிறது.
-                        </p>
-                        <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
-                    </div>
-                    <center>
-                        <div class="profile-card">
-                            <div class="profile-header">
-                                <img src="assets/images/img4.png" alt="Profile Image" class="profile-img">
-                                <div class="profile-name">ஆரவ் ஏ (IN2)</div>
-                            </div>
-                            <div class="profile-details">
-                                <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
-                                <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
-                                <div><strong>மதம்:</strong> இந்து</div>
-                                <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                                <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
-                                <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
-                                <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
-                                <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
-                            </div>
-                            <div class="profile-actions">
-                                <button class="btn message">📩 செய்தி அனுப்பு</button>
-                                <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                                <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                            </div>
-                        </div>
-                
-                        <div class="profile-card">
-                            <div class="profile-header">
-                                <img src="assets/images/img5.png" alt="Profile Image" class="profile-img">
-                                <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
-                            </div>
-                            <div class="profile-details">
-                                <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
-                                <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
-                                <div><strong>மதம்:</strong> இந்து</div>
-                                <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                                <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
-                                <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
-                                <div><strong>தாய்மொழி:</strong> இந்தி</div>
-                                <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
-                            </div>
-                            <div class="profile-actions">
-                                <button class="btn message">📩 செய்தி அனுப்பு</button>
-                                <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                                <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                            </div>
-                        </div>
-                        </center>
-                
-                        <div class="pagination">
-                            <button class="page-btn" data-page="1">1</button>
-                            <button class="page-btn" data-page="2">2</button>
-                            <button class="page-btn" data-page="3">3</button>
-                            <button class="page-btn" data-page="4">...</button>
-                            <button class="page-btn" data-page="next">&raquo;</button>
-                        </div>
-                
-            </div>
-        <div class="Visited-profile" id="Visited_profile">
-                        <div class="header">
-                            <h1>நான் பார்த்த சுயவிவரம்</h1> 
-                            <p>நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும் இங்கே சரிபார்க்கலாம்.</p> 
-                        </div>
-                
-                        <div class="spotlight-box">
-                            <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
-                            <p>
-                                நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும் ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும்.
-                                இது 10 மடங்கு வேகமான முடிவுகளை அளிக்கிறது.
-                            </p>
-                            <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
-                        </div>
-                        <center>
-                            <div class="profile-card">
-                                <div class="profile-header">
-                                    <img src="assets/images/img4.png" alt="Profile Image" class="profile-img">
-                                    <div class="profile-name">ஆரவ் ஏ (IN2)</div>
-                                </div>
-                                <div class="profile-details">
-                                    <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
-                                    <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
-                                    <div><strong>மதம்:</strong> இந்து</div>
-                                    <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                                    <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
-                                    <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
-                                    <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
-                                    <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
-                                </div>
-                                <div class="profile-actions">
-                                    <button class="btn message">📩 செய்தி அனுப்பு</button>
-                                    <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                                    <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                                </div>
-                            </div>
-                
-                            <div class="profile-card">
-                                <div class="profile-header">
-                                    <img src="assets/images/img5.png" alt="Profile Image" class="profile-img">
-                                    <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
-                                </div>
-                                <div class="profile-details">
-                                    <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
-                                    <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
-                                    <div><strong>மதம்:</strong> இந்து</div>
-                                    <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
-                                    <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
-                                    <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
-                                    <div><strong>தாய்மொழி:</strong> இந்தி</div>
-                                    <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
-                                </div>
-                                <div class="profile-actions">
-                                    <button class="btn message">📩 செய்தி அனுப்பு</button>
-                                    <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
-                                    <button class="btn block">🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்</button>
-                                  </div>
-                              </div>
-                          </center>
-            </div>
-                          
-      
+        <div class="header">
+          <h1>தடைப்பட்ட உறுப்பினர் சுயவிவரம்</h1>
+          <p>
+            நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும்
+            இங்கே சரிபார்க்கலாம்.
+          </p>
+        </div>
 
-  </main>
+        <div class="spotlight-box">
+          <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
+          <p>
+            நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும்
+            ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும். இது 10 மடங்கு வேகமான முடிவுகளை
+            அளிக்கிறது.
+          </p>
+          <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
+        </div>
+        <center>
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img4.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">ஆரவ் ஏ (IN2)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
+              <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
+              <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
+              <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
+          </div>
 
-  <footer class="footer footer-dark section-pt position-relative">
-    <div class="footer-content pb-3">
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img5.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
+              <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
+              <div><strong>தாய்மொழி:</strong> இந்தி</div>
+              <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="Viewed-my-profile" id="Viewed_my_profile">
+        <div class="header">
+          <h1>என் சுயவிவரத்தைப் பார்த்தவர்கள்</h1>
+          <p>
+            நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும்
+            இங்கே சரிபார்க்கலாம்.
+          </p>
+        </div>
+
+        <div class="spotlight-box">
+          <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
+          <p>
+            நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும்
+            ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும். இது 10 மடங்கு வேகமான முடிவுகளை
+            அளிக்கிறது.
+          </p>
+          <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
+        </div>
+        <center>
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img4.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">ஆரவ் ஏ (IN2)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
+              <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
+              <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
+              <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img5.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
+              <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
+              <div><strong>தாய்மொழி:</strong> இந்தி</div>
+              <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
+          </div>
+        </center>
+
+        <div class="pagination">
+          <button class="page-btn" data-page="1">1</button>
+          <button class="page-btn" data-page="2">2</button>
+          <button class="page-btn" data-page="3">3</button>
+          <button class="page-btn" data-page="4">...</button>
+          <button class="page-btn" data-page="next">&raquo;</button>
+        </div>
+      </div>
+      <div class="Visited-profile" id="Visited_profile">
+        <div class="header">
+          <h1>நான் பார்த்த சுயவிவரம்</h1>
+          <p>
+            நீங்கள் உங்கள் சார்ட்லிஸ்ட் செய்யப்பட்ட அனைத்து உறுப்பினர்களையும்
+            இங்கே சரிபார்க்கலாம்.
+          </p>
+        </div>
+
+        <div class="spotlight-box">
+          <h2>🌟 ஸ்பாட்லைட் சுயவிவரம்</h2>
+          <p>
+            நீல நிற சுயவிவரங்கள் தேடல் முடிவுகளின் மேற்புறத்தில் காட்டப்படும்
+            ஸ்பாட்லைட் சுயவிவரங்கள் ஆகும். இது 10 மடங்கு வேகமான முடிவுகளை
+            அளிக்கிறது.
+          </p>
+          <p class="profile-count">7 சுயவிவரங்கள் கண்டறியப்பட்டது</p>
+        </div>
+        <center>
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img4.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">ஆரவ் ஏ (IN2)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 29 ஆண்டுகள் 11 மாதங்கள்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 5 அங்குலம் - 165 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> அச்சன்கோயில், இந்தியா</div>
+              <div><strong>கல்வி:</strong> பி.ஆர்க், பி.காம்</div>
+              <div><strong>தாய்மொழி:</strong> ஆங்கிலம்</div>
+              <div><strong>வேலை:</strong> அலுவலக உத்தியோகஸ்தர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-header">
+              <img
+                src="assets/images/img5.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <div class="profile-name">சிவன்ஷ் எல் (IN12)</div>
+            </div>
+            <div class="profile-details">
+              <div><strong>வயது:</strong> 30 ஆண்டுகள் 1 மாதம்</div>
+              <div><strong>உயரம்:</strong> 5 அடி 11 அங்குலம் - 180 செ.மீ</div>
+              <div><strong>மதம்:</strong> இந்து</div>
+              <div><strong>ஜாதி:</strong> 24 மனை தெலுங்கு செட்டியார்</div>
+              <div><strong>இடம்:</strong> சவரா, இந்தியா</div>
+              <div><strong>கல்வி:</strong> ஐசிடபிள்யூஏ, எம்.எஸ்சி</div>
+              <div><strong>தாய்மொழி:</strong> இந்தி</div>
+              <div><strong>வேலை:</strong> சட்ட நிபுணர்</div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn message">📩 செய்தி அனுப்பு</button>
+              <button class="btn interest">❤️ ஆர்வத்தை அனுப்பு</button>
+              <button class="btn block">
+                🚫 தடைப்பட்ட பட்டியலில் சேர்க்கவும்
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+    </main>
+
+    <footer class="footer footer-dark section-pt position-relative">
+      <div class="footer-content pb-3">
         <div class="container">
-            <div class="row">
-                <!-- Footer widget 1 -->
-                <div class="col-md-3">
-                    <div class="widget">
-                        <a href="index.html" class="footer-logo">
-                            <img class="navbar-brand-item" src="assets/images/logo.png" alt="Matrimony">
-                        </a>
-                        <p class="mt-3">Find your perfect match at Matrimony, where we help you connect with like-minded individuals. Start your journey to a happy life today!</p>
-                        <div class="widget address" style="background-image:url(assets/images/map.png);background-position:50% 20px;background-repeat:no-repeat;background-size:contain">
-                            <ul class="list-unstyled">
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-location-pin"></i>123/4 Marriage Lane, New York, US</li>
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-phone"></i>+1 555 987 6543</li>
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-email"></i>support@matrimony.com</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="row">
+            <!-- Footer widget 1 -->
+            <div class="col-md-3">
+              <div class="widget">
+                <a href="index.html" class="footer-logo">
+                  <img
+                    class="navbar-brand-item"
+                    src="assets/images/logo.png"
+                    alt="Matrimony"
+                  />
+                </a>
+                <p class="mt-3">
+                  Find your perfect match at Matrimony, where we help you
+                  connect with like-minded individuals. Start your journey to a
+                  happy life today!
+                </p>
+                <div
+                  class="widget address"
+                  style="
+                    background-image: url(assets/images/map.png);
+                    background-position: 50% 20px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                >
+                  <ul class="list-unstyled">
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-location-pin"></i
+                      >123/4 Marriage Lane, New York, US
+                    </li>
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-phone"></i>+1 555
+                      987 6543
+                    </li>
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-email"></i
+                      >support@matrimony.com
+                    </li>
+                  </ul>
                 </div>
-                <!-- Footer widget 2 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="widget">
-                        <h5>Quick Links</h5>
-                        <ul class="nav flex-column primary-hover">
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                            <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
-                            <li class="nav-item"><a class="nav-link" href="terms.html">Terms and Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Footer widget 4 -->
-                <div class="col-md-3">
-                    <div class="widget bg-gradient p-4 all-text-white border-radius-3">
-                        <i class="icofont icofont-ui-email newsletter-icon"></i>
-                        <p class="mb-2">Subscribe to our newsletter for matrimonial advice, success stories, and more!</p>
-                        <div class="form-group mb-0">
-                            <input class="form-control border-white mb-3" type="email" placeholder="Enter your email...">
-                            <button class="btn btn-dark mb-0">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+            <!-- Footer widget 2 -->
+            <div class="col-md-2 col-sm-6">
+              <div class="widget">
+                <h5>Quick Links</h5>
+                <ul class="nav flex-column primary-hover">
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="terms.html"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- Footer widget 4 -->
-        </div>
-    </div>
-    <div class="divider mt-3"></div>
-    
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
-            
-                <div class="copyright-text">©2023 <a href="#!">Matrimony</a>. All Rights Reserved</div>
-                <!-- copyright links-->
-                <div class="copyright-links primary-hover mt-3 mt-md-0">
-                    <ul class="social-icons light">
-                        <li class="social-icons-item social-facebook">
-                            <a class="social-icons-link" href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="social-icons-item social-instagram">
-                            <a class="social-icons-link" href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="social-icons-item social-twitter">
-                            <a class="social-icons-link" href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="social-icons-item social-youtube">
-                            <a class="social-icons-link" href="#"><i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li class="social-icons-item social-vimeo">
-                            <a class="social-icons-link" href="#"><i class="fa fa-vimeo"></i></a>
-                        </li>
-                        <li class="social-icons-item social-pinterest">
-                            <a class="social-icons-link" href="#"><i class="fa fa-pinterest"></i></a>
-                        </li>
-                        <li class="social-icons-item social-gplus">
-                            <a class="social-icons-link" href="#"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                    </ul>
+            <div class="col-md-3">
+              <div
+                class="widget bg-gradient p-4 all-text-white border-radius-3"
+              >
+                <i class="icofont icofont-ui-email newsletter-icon"></i>
+                <p class="mb-2">
+                  Subscribe to our newsletter for matrimonial advice, success
+                  stories, and more!
+                </p>
+                <div class="form-group mb-0">
+                  <input
+                    class="form-control border-white mb-3"
+                    type="email"
+                    placeholder="Enter your email..."
+                  />
+                  <button class="btn btn-dark mb-0">Subscribe</button>
                 </div>
+              </div>
             </div>
+          </div>
+          <!-- Footer widget 4 -->
         </div>
-    </div>
-</footer>
+      </div>
+      <div class="divider mt-3"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <div class="footer-copyright">
+        <div class="container">
+          <div
+            class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left"
+          >
+            <div class="copyright-text">
+              ©2023 <a href="#!">Matrimony</a>. All Rights Reserved
+            </div>
+            <!-- copyright links-->
+            <div class="copyright-links primary-hover mt-3 mt-md-0">
+              <ul class="social-icons light">
+                <li class="social-icons-item social-facebook">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-instagram">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-twitter">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-youtube">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-vimeo">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-vimeo"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-pinterest">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-gplus">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-google-plus"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor-profile/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor-profile/php-email-form/validate.js"></script>
-  <script src="assets/vendor-profile/aos/aos.js"></script>
-  <script src="assets/vendor-profile/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor-profile/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor-profile/swiper/swiper-bundle.min.js"></script>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor-profile/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor-profile/php-email-form/validate.js"></script>
+    <script src="assets/vendor-profile/aos/aos.js"></script>
+    <script src="assets/vendor-profile/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor-profile/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor-profile/swiper/swiper-bundle.min.js"></script>
 
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

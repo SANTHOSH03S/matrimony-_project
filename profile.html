@@ -1,262 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Profile</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor-profile/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor-profile/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor-profile/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor-profile/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-  <!-- Main CSS File -->
-  <link href="assets/css/profile.css" rel="stylesheet">
-  <!----script -->
-  <script src="assets/js/profile.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css"
+      integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor-profile/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor-profile/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor-profile/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor-profile/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-<body class="index-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+    <!-- Main CSS File -->
+    <link href="assets/css/profile.css" rel="stylesheet" />
+    <!----script -->
+    <script src="assets/js/profile.js"></script>
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
         <a class="navbar-brand" href="index.html">
-            <img class="navbar-brand-item" style="height: 35px;" src="assets/images/logo.png" alt="Faster">
+          <img
+            class="navbar-brand-item"
+            style="height: 35px"
+            src="assets/images/logo.png"
+            alt="Faster"
+          />
         </a>
         <nav id="navmenu" class="navmenu">
-            <ul>
-                <li class="dropdown"><a href="profile.html"><span>முகப்பு</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="index.html">முகப்பு</a></li>
-                    </ul>
+          <ul>
+            <li class="dropdown">
+              <a href="profile.html"
+                ><span>முகப்பு</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="index.html">முகப்பு</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>எனது விபரம்</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="viewprofile.html">விபரத்தை காண</a></li>
+                <li><a href="#">விபரத்தை திருத்த</a></li>
+                <li><a href="#">எனது சேமித்த தேடல்கள்</a></li>
+                <li><a href="#">எனது செய்தி</a></li>
+                <li><a href="#">எனது விருப்பங்கள்</a></li>
+                <li><a href="#">புகைப்பட மேலாண்மை</a></li>
+                <li><a href="#">ஜாதக மேலாண்மை</a></li>
+                <li><a href="#">ஆவண மேலாண்மை</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>தேடல்</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="search.html">விரைவு தேடல்</a></li>
+                <li><a href="#">அடிப்படை தேடல்</a></li>
+                <li><a href="#">மேம்பட்ட தேடல்</a></li>
+                <li><a href="#">சொல் தேடல்</a></li>
+                <li><a href="#">இடம் தேடல்</a></li>
+                <li><a href="#">தொழில் தேடல்</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>உறுப்பினர்</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="membership.html">உறுப்பினர் திட்டங்கள்</a></li>
+                <li><a href="#">தற்போதைய திட்டம்</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>விபரங்கள்</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="profileDetails.html">சுருக்கப்பட்ட விபரங்கள்</a>
                 </li>
-                <li class="dropdown"><a href="#"><span>எனது விபரம்</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="viewprofile.html">விபரத்தை காண</a></li>
-                        <li><a href="#">விபரத்தை திருத்த</a></li>
-                        <li><a href="#">எனது சேமித்த தேடல்கள்</a></li>
-                        <li><a href="#">எனது செய்தி</a></li>
-                        <li><a href="#">எனது விருப்பங்கள்</a></li>
-                        <li><a href="#">புகைப்பட மேலாண்மை</a></li>
-                        <li><a href="#">ஜாதக மேலாண்மை</a></li>
-                        <li><a href="#">ஆவண மேலாண்மை</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span>தேடல்</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="search.html">விரைவு தேடல்</a></li>
-                        <li><a href="#">அடிப்படை தேடல்</a></li>
-                        <li><a href="#">மேம்பட்ட தேடல்</a></li>
-                        <li><a href="#">சொல் தேடல்</a></li>
-                        <li><a href="#">இடம் தேடல்</a></li>
-                        <li><a href="#">தொழில் தேடல்</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span>உறுப்பினர்</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="membership.html">உறுப்பினர் திட்டங்கள்</a></li>
-                        <li><a href="#">தற்போதைய திட்டம்</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span>விபரங்கள்</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="profileDetails.html">சுருக்கப்பட்ட விபரங்கள்</a></li>
-                        <li><a href="#">தடைசெய்யப்பட்ட விபரங்கள்</a></li>
-                        <li><a href="#">என்னைப் பார்த்தவர்கள்</a></li>
-                        <li><a href="#">நான் பார்த்த விபரங்கள்</a></li>
-                        <li><a href="#">என் கைபேசி எண் பார்த்தவர்கள்</a></li>
-                        <li><a href="#">புகைப்பட கடவுச்சொல் கோரிக்கை</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span><i class="fa-solid fa-gear fa-xl" style="color: #6b6868;"></i></span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="#">புகைப்பட அமைப்பு</a></li>
-                        <li><a href="#">தொடர்பு அமைப்பு</a></li>
-                        <li><a href="#">கடவுச்சொல் மாற்றம்</a></li>
-                        <li><a href="#">வெளியேறு</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span><i class="fa-solid fa-user fa-xl" style="color: #6b6868;"></i></span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <div class="modern-user-profile" id="user-profile">
-                            <div class="profile-pic-container">
-                                <img src="assets/images/img4.png" alt="User Profile" class="profile-pic" />
-                            </div>
-                            <div class="profile-details">
-                                <h4>சான்வி ஆசார்யா</h4>
-                                <p>அடையாளம்: <span class="user-id">IN1</span></p>
-                                <p><i class="fas fa-clock"></i>கடைசியாக உள்நுழைந்தது: 08:24 7 டிசம்பர் 2024 </p>
-                                <p><i class="fas fa-crown"></i>உறுப்பினர் நிலை: <span class="membership-status">செலுத்தப்பட்டது</span></p>
-                            </div>
-                        </div>
-                    </ul>
-                </li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                <li><a href="#">தடைசெய்யப்பட்ட விபரங்கள்</a></li>
+                <li><a href="#">என்னைப் பார்த்தவர்கள்</a></li>
+                <li><a href="#">நான் பார்த்த விபரங்கள்</a></li>
+                <li><a href="#">என் கைபேசி எண் பார்த்தவர்கள்</a></li>
+                <li><a href="#">புகைப்பட கடவுச்சொல் கோரிக்கை</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span
+                  ><i
+                    class="fa-solid fa-gear fa-xl"
+                    style="color: #6b6868"
+                  ></i></span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">புகைப்பட அமைப்பு</a></li>
+                <li><a href="#">தொடர்பு அமைப்பு</a></li>
+                <li><a href="#">கடவுச்சொல் மாற்றம்</a></li>
+                <li><a href="#">வெளியேறு</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span
+                  ><i
+                    class="fa-solid fa-user fa-xl"
+                    style="color: #6b6868"
+                  ></i></span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <div class="modern-user-profile" id="user-profile">
+                  <div class="profile-pic-container">
+                    <img
+                      src="assets/images/img4.png"
+                      alt="User Profile"
+                      class="profile-pic"
+                    />
+                  </div>
+                  <div class="profile-details">
+                    <h4>சான்வி ஆசார்யா</h4>
+                    <p>அடையாளம்: <span class="user-id">IN1</span></p>
+                    <p>
+                      <i class="fas fa-clock"></i>கடைசியாக உள்நுழைந்தது: 08:24 7
+                      டிசம்பர் 2024
+                    </p>
+                    <p>
+                      <i class="fas fa-crown"></i>உறுப்பினர் நிலை:
+                      <span class="membership-status">செலுத்தப்பட்டது</span>
+                    </p>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-    </div>
-</header>
-
-
-<main class="main">
-
-  <!-- புகைப்படத்தை பதிவேற்றம் செய்யும் பகுதி -->
-  <section id="hero" class="hero section light-background">
-      <div class="upload-card">
-          <div class="image-preview" id="imagePreview">
-              <img src="assets/images/profile-icon.png" id="select_image" width="150" height="auto" />
-          </div>
-          <a onclick="select_image()"><h2>சுயவிவர புகைப்படத்தை மாற்றவும்</h2></a>
       </div>
-      <div class="profile-card">
+    </header>
+    <main class="main">
+      <!-- புகைப்படத்தை பதிவேற்றம் செய்யும் பகுதி -->
+      <section id="hero" class="hero section light-background">
+        <div class="upload-card">
+          <div class="image-preview" id="imagePreview">
+            <img
+              src="assets/images/profile-icon.png"
+              id="select_image"
+              width="150"
+              height="auto"
+            />
+          </div>
+          <a onclick="select_image()"
+            ><h2>சுயவிவர புகைப்படத்தை மாற்றவும்</h2></a
+          >
+        </div>
+        <div class="profile-card">
           <div class="profile-header">
-              <h2>வரவேற்கிறோம், <span>அர்ஜுன் மேத்தா</span> <small>(IN)</small></h2>
-              <p>உங்கள் சுயவிவரம் <strong>65% நிறைவடைந்துள்ளது</strong></p>
-              <h6>வயது: 29</h6>
-              <h6>தொழில்: மென்பொருள் பொறியாளர்</h6>
-              <h6>இடம்: பெங்களூரு, இந்தியா</h6>
+            <h2>
+              வரவேற்கிறோம், <span>அர்ஜுன் மேத்தா</span> <small>(IN)</small>
+            </h2>
+            <p>உங்கள் சுயவிவரம் <strong>65% நிறைவடைந்துள்ளது</strong></p>
+            <h6>வயது: 29</h6>
+            <h6>தொழில்: மென்பொருள் பொறியாளர்</h6>
+            <h6>இடம்: பெங்களூரு, இந்தியா</h6>
           </div>
           <div class="progress-bar">
-              <div class="progress" style="width: 65%;"></div>
+            <div class="progress" style="width: 65%"></div>
           </div>
-          <small>உதவி: உங்கள் சுயவிவரத்தில் மேலும் தகவல்களைச் சேர்த்து உங்கள் காட்சி திறனை மேம்படுத்தவும்!</small>
-      </div>
+          <small
+            >உதவி: உங்கள் சுயவிவரத்தில் மேலும் தகவல்களைச் சேர்த்து உங்கள் காட்சி
+            திறனை மேம்படுத்தவும்!</small
+          >
+        </div>
 
-      <!-- மாடல் அமைப்பு -->
-      <center>
+        <!-- மாடல் அமைப்பு -->
+        <center>
           <div id="profileModal" class="modal">
-              <div class="modal-content">
-                  <span class="close-btn" id="closeModalBtn" onclick="closeModalBtn()">&times;</span>
-                  <h2>சுயவிவர புகைப்படத்தை திருத்து</h2>
-                  <p>ஒரு படத்தைத் தேர்ந்தெடுத்து, அதை பதிவேற்றுவதற்கு சமர்ப்பி பொத்தானை கிளிக் செய்யவும்.</p>
-                  <label for="file" style="cursor: pointer; color:red; font-size:large;">புகைப்படத்தை பதிவேற்றவும்</label>
-                  <img id="select_card_image" width="150" height="auto" style="margin-left:100px; border-radius: 10px;" />
-                  <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
-                  <button class="submit-btn" onclick="profileImage()">சமர்ப்பிக்க</button>
-              </div>
+            <div class="modal-content">
+              <span
+                class="close-btn"
+                id="closeModalBtn"
+                onclick="closeModalBtn()"
+                >&times;</span
+              >
+              <h2>சுயவிவர புகைப்படத்தை திருத்து</h2>
+              <p>
+                ஒரு படத்தைத் தேர்ந்தெடுத்து, அதை பதிவேற்றுவதற்கு சமர்ப்பி
+                பொத்தானை கிளிக் செய்யவும்.
+              </p>
+              <label
+                for="file"
+                style="cursor: pointer; color: red; font-size: large"
+                >புகைப்படத்தை பதிவேற்றவும்</label
+              >
+              <img
+                id="select_card_image"
+                width="150"
+                height="auto"
+                style="margin-left: 100px; border-radius: 10px"
+              />
+              <input
+                type="file"
+                accept="image/*"
+                name="image"
+                id="file"
+                onchange="loadFile(event)"
+                style="display: none"
+              />
+              <button class="submit-btn" onclick="profileImage()">
+                சமர்ப்பிக்க
+              </button>
+            </div>
           </div>
-      </center>
-  </section>
-  <!-- /புகைப்படத்தை பதிவேற்றம் செய்யும் பகுதி -->
+        </center>
+      </section>
+      <!-- /புகைப்படத்தை பதிவேற்றம் செய்யும் பகுதி -->
+    </main>
 
-</main>
-
-
-  <footer class="footer footer-dark section-pt position-relative">
-    <div class="footer-content pb-3">
+    <footer class="footer footer-dark section-pt position-relative">
+      <div class="footer-content pb-3">
         <div class="container">
-            <div class="row">
-                <!-- Footer widget 1 -->
-                <div class="col-md-3">
-                    <div class="widget">
-                        <a href="index.html" class="footer-logo">
-                            <img class="navbar-brand-item" src="assets/images/logo.png" alt="Matrimony">
-                        </a>
-                        <p class="mt-3">Find your perfect match at Matrimony, where we help you connect with like-minded individuals. Start your journey to a happy life today!</p>
-                        <div class="widget address" style="background-image:url(assets/images/map.png);background-position:50% 20px;background-repeat:no-repeat;background-size:contain">
-                            <ul class="list-unstyled">
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-location-pin"></i>123/4 Marriage Lane, New York, US</li>
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-phone"></i>+1 555 987 6543</li>
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-email"></i>support@matrimony.com</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="row">
+            <!-- Footer widget 1 -->
+            <div class="col-md-3">
+              <div class="widget">
+                <a href="index.html" class="footer-logo">
+                  <img
+                    class="navbar-brand-item"
+                    src="assets/images/logo.png"
+                    alt="Matrimony"
+                  />
+                </a>
+                <p class="mt-3">
+                  Find your perfect match at Matrimony, where we help you
+                  connect with like-minded individuals. Start your journey to a
+                  happy life today!
+                </p>
+                <div
+                  class="widget address"
+                  style="
+                    background-image: url(assets/images/map.png);
+                    background-position: 50% 20px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                >
+                  <ul class="list-unstyled">
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-location-pin"></i
+                      >123/4 Marriage Lane, New York, US
+                    </li>
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-phone"></i>+1 555
+                      987 6543
+                    </li>
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-email"></i
+                      >support@matrimony.com
+                    </li>
+                  </ul>
                 </div>
-                <!-- Footer widget 2 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="widget">
-                        <h5>Quick Links</h5>
-                        <ul class="nav flex-column primary-hover">
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                            <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
-                            <li class="nav-item"><a class="nav-link" href="terms.html">Terms and Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Footer widget 4 -->
-                <div class="col-md-3">
-                    <div class="widget bg-gradient p-4 all-text-white border-radius-3">
-                        <i class="icofont icofont-ui-email newsletter-icon"></i>
-                        <p class="mb-2">Subscribe to our newsletter for matrimonial advice, success stories, and more!</p>
-                        <div class="form-group mb-0">
-                            <input class="form-control border-white mb-3" type="email" placeholder="Enter your email...">
-                            <button class="btn btn-dark mb-0">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+            <!-- Footer widget 2 -->
+            <div class="col-md-2 col-sm-6">
+              <div class="widget">
+                <h5>Quick Links</h5>
+                <ul class="nav flex-column primary-hover">
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="terms.html"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- Footer widget 4 -->
-        </div>
-    </div>
-    <div class="divider mt-3"></div>
-    
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
-            
-                <div class="copyright-text">©2023 <a href="#!">Matrimony</a>. All Rights Reserved</div>
-                <!-- copyright links-->
-                <div class="copyright-links primary-hover mt-3 mt-md-0">
-                    <ul class="social-icons light">
-                        <li class="social-icons-item social-facebook">
-                            <a class="social-icons-link" href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="social-icons-item social-instagram">
-                            <a class="social-icons-link" href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="social-icons-item social-twitter">
-                            <a class="social-icons-link" href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="social-icons-item social-youtube">
-                            <a class="social-icons-link" href="#"><i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li class="social-icons-item social-vimeo">
-                            <a class="social-icons-link" href="#"><i class="fa fa-vimeo"></i></a>
-                        </li>
-                        <li class="social-icons-item social-pinterest">
-                            <a class="social-icons-link" href="#"><i class="fa fa-pinterest"></i></a>
-                        </li>
-                        <li class="social-icons-item social-gplus">
-                            <a class="social-icons-link" href="#"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                    </ul>
+            <div class="col-md-3">
+              <div
+                class="widget bg-gradient p-4 all-text-white border-radius-3"
+              >
+                <i class="icofont icofont-ui-email newsletter-icon"></i>
+                <p class="mb-2">
+                  Subscribe to our newsletter for matrimonial advice, success
+                  stories, and more!
+                </p>
+                <div class="form-group mb-0">
+                  <input
+                    class="form-control border-white mb-3"
+                    type="email"
+                    placeholder="Enter your email..."
+                  />
+                  <button class="btn btn-dark mb-0">Subscribe</button>
                 </div>
+              </div>
             </div>
+          </div>
+          <!-- Footer widget 4 -->
         </div>
-    </div>
-</footer>
+      </div>
+      <div class="divider mt-3"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <div class="footer-copyright">
+        <div class="container">
+          <div
+            class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left"
+          >
+            <div class="copyright-text">
+              ©2023 <a href="#!">Matrimony</a>. All Rights Reserved
+            </div>
+            <!-- copyright links-->
+            <div class="copyright-links primary-hover mt-3 mt-md-0">
+              <ul class="social-icons light">
+                <li class="social-icons-item social-facebook">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-instagram">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-twitter">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-youtube">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-vimeo">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-vimeo"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-pinterest">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-gplus">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-google-plus"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor-profile/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor-profile/php-email-form/validate.js"></script>
-  <script src="assets/vendor-profile/aos/aos.js"></script>
-  <script src="assets/vendor-profile/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor-profile/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor-profile/swiper/swiper-bundle.min.js"></script>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor-profile/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor-profile/php-email-form/validate.js"></script>
+    <script src="assets/vendor-profile/aos/aos.js"></script>
+    <script src="assets/vendor-profile/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor-profile/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor-profile/swiper/swiper-bundle.min.js"></script>
 
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

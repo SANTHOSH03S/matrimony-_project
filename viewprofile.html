@@ -1,660 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Profile</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor-profile/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor-profile/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor-profile/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor-profile/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Main CSS File -->
-  <link href="assets/css/profile.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/viewprofile.css">
-  <!----script -->
-  <script src="assets/js/profile.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css"
+      integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor-profile/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor-profile/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor-profile/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor-profile/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor-profile/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link href="assets/css/profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/viewprofile.css" />
+    <!----script -->
+    <script src="assets/js/profile.js"></script>
+  </head>
 
-<body class="index-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
         <a class="navbar-brand" href="index.html">
-            <img class="navbar-brand-item" style="height: 35px;" src="assets/images/logo.png" alt="Faster">
+          <img
+            class="navbar-brand-item"
+            style="height: 35px"
+            src="assets/images/logo.png"
+            alt="Faster"
+          />
         </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li class="dropdown"><a href="profile.html"><span>My Home</span></a>
-          <li class="dropdown"><a href="#"><span>My Profile</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="viewprofile.html" onclick="ViewProfile()" >View profile</a></li>
-              <li><a href="#" onclick="EditProfile()">Edit Profile</a></li>
-              <li><a href="#">My Saved Searches</a></li>
-              <li><a href="#">My Message</a></li>
-              <li><a href="#">My Express Interest</a></li>
-              <li><a href="#">Manage Photo</a></li>
-              <li><a href="#">Manage Horoscope</a></li>
-              <li><a href="#">Manage Document</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href=""><span>Search</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="search.html">Quick Search</a></li>
-              <li><a href="#">Basic Search</a></li>
-              <li><a href="#">Advanced Search</a></li>
-              <li><a href="#">Keyword Search</a></li>
-              <li><a href="#">Location Search</a></li>
-              <li><a href="#">Occupation Search</a></li>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li class="dropdown">
+              <a href="profile.html"><span>My Home</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>My Profile</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="viewprofile.html" onclick="ViewProfile()"
+                    >View profile</a
+                  >
+                </li>
+                <li><a href="#" onclick="EditProfile()">Edit Profile</a></li>
+                <li><a href="#">My Saved Searches</a></li>
+                <li><a href="#">My Message</a></li>
+                <li><a href="#">My Express Interest</a></li>
+                <li><a href="#">Manage Photo</a></li>
+                <li><a href="#">Manage Horoscope</a></li>
+                <li><a href="#">Manage Document</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href=""
+                ><span>Search</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="search.html">Quick Search</a></li>
+                <li><a href="#">Basic Search</a></li>
+                <li><a href="#">Advanced Search</a></li>
+                <li><a href="#">Keyword Search</a></li>
+                <li><a href="#">Location Search</a></li>
+                <li><a href="#">Occupation Search</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Membership</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Membership Plans</a></li>
+                <li><a href="#">Current Plan</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Profile Details</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Shortlisted Profile </a></li>
+                <li><a href="#">Blocked Profile </a></li>
+                <li><a href="#">My Profile Viewed By </a></li>
+                <li><a href="#">I Visited Profile </a></li>
+                <li><a href="#">My mobile No Viewed By </a></li>
+                <li><a href="#">Photo Password Request </a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span
+                  ><i
+                    class="fa-solid fa-gear fa-xl"
+                    style="color: #6b6868"
+                  ></i></span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Photo setting </a></li>
+                <li><a href="#">Contact View setting </a></li>
+                <li><a href="#">Change Password </a></li>
+                <li><a href="#">Logout </a></li>
+              </ul>
+            </li>
+            <li><p></p></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span
+                  ><i
+                    class="fa-solid fa-user fa-xl"
+                    style="color: #6b6868"
+                  ></i></span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <div class="modern-user-profile" id="user-profile">
+                  <div class="profile-pic-container">
+                    <img
+                      src="assets/images/img4.png"
+                      alt="User Profile"
+                      class="profile-pic"
+                    />
+                  </div>
+                  <div class="profile-details">
+                    <h4>Saanvi Acharya</h4>
+                    <p>ID: <span class="user-id">IN1</span></p>
+                    <p>
+                      <i class="fas fa-clock"></i>Last Login: 08:24 7th December
+                      2024
+                    </p>
+                    <p>
+                      <i class="fas fa-crown"></i> Membership:
+                      <span class="membership-status">Paid</span>
+                    </p>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Membership</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Membership Plans</a></li>
-              <li><a href="#">Current Plan</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Profile Details</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Shortlisted Profile </a></li>
-              <li><a href="#">Blocked Profile </a></li>
-              <li><a href="#">My Profile Viewed By </a></li>
-              <li><a href="#">I Visited Profile </a></li>
-              <li><a href="#">My mobile No Viewed By </a></li>
-              <li><a href="#">Photo Password Request </a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-gear fa-xl" style="color: #6b6868;"></i></span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Photo setting </a></li>
-              <li><a href="#">Contact View setting </a></li>
-              <li><a href="#">Change Password </a></li>
-              <li><a href="#">Logout </a></li>
-            </ul>
-          </li>
-          <li><p></p></li>
-          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-user fa-xl" style="color: #6b6868;"></i></span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <div class="modern-user-profile" id="user-profile">
-                <div class="profile-pic-container">
-                  <img src="assets/images/img4.png" alt="User Profile" class="profile-pic" />
-                </div>
-                <div class="profile-details">
-                  <h4>Saanvi Acharya</h4>
-                  <p>ID: <span class="user-id">IN1</span></p>
-                  <p><i class="fas fa-clock"></i>Last Login: 08:24 7th December 2024 </p>
-                  <p><i class="fas fa-crown"></i> Membership: <span class="membership-status">Paid</span></p>
-                </div>
+    <!-- Basic Details Section -->
+    <main class="profile" id="profile">
+      <div class="profile-container">
+        <!-- Photo Upload Section -->
+        <div class="photo-upload-card">
+          <div class="photo-upload-header">
+            <h2><i class="fa fa-camera"></i> புகைப்படத்தை பதிவேற்றவும்</h2>
+          </div>
+          <div class="photo-upload-content">
+            <div class="photo-preview">
+              <img
+                src="assets/images/img4.png"
+                alt="Profile Photo"
+                class="profile-photo"
+              />
+            </div>
+            <button class="upload-btn">
+              <i class="fa fa-upload"></i> புகைப்படத்தை பதிவேற்றவும்
+            </button>
+          </div>
+        </div>
+        <!-- Profile Details -->
+        <h2>சுயவிவர விவரங்கள்</h2>
+        <p class="instruction">
+          உங்கள் சுயவிவர விவரங்களை திருத்த நுணுக்கப் பெயரைக் கிளிக் செய்யவும்
+          <i class="fa fa-pencil"></i>.
+        </p>
+        <!-- Basic Details Section -->
+        <div class="section">
+          <div class="details-header">
+            <h3><i class="fa fa-book"></i> அடிப்படை விவரங்கள்</h3>
+            <button class="edit-btn">
+              <i class="fa fa-pencil"></i> திருத்தவும்
+            </button>
+          </div>
+          <div class="details-content">
+            <div class="detail-row">
+              <span class="label">பயனர் பெயர்:</span
+              ><span class="value">சான்வி ஆச்சார்யா</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">மின்னஞ்சல்:</span
+              ><span class="value">userfemale1@gamil.com</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">மொபைல் எண்:</span
+              ><span class="value">+91-9328530201</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">பாலினம்:</span><span class="value">பெண்</span>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="details-content">
+            <div class="detail-row">
+              <span class="label">பிறந்த தேதி:</span
+              ><span class="value">05/02/1975</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">திருமண நிலை:</span
+              ><span class="value">திருமணம் ஆகாதவர்</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">முதுகோள் மொழி:</span
+              ><span class="value">அங்கிகா</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">சுயவிவரம் உருவாக்கியவர்:</span
+              ><span class="value">தானாக</span>
+            </div>
+          </div>
+        </div>
+        <!-- Other Sections -->
+        <div class="additional-sections">
+          <!-- About Me Section -->
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-star"></i> என்னைப் பற்றியது</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <p class="about-content">
+              உங்களைப் பற்றிய சில விபரங்களை எழுதுங்கள். உதாரணமாக, நீங்கள்
+              எவ்வாறு ஒரு நபராக இருக்கிறீர்கள், உங்கள் தன்மை, பொழுதுபோக்குகள்
+              மற்றும் குடும்பத்தைப் பற்றிய தகவல்கள் போன்றவை.
+            </p>
+          </div>
+          <!-- Religion Information Section -->
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-book"></i> மதத் தகவல்</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">மதம்:</span
+                ><span class="value">ஹிந்து</span>
               </div>
-            </ul>
-          </li>
-         
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
+              <div class="detail-row">
+                <span class="label">ஜாதி:</span
+                ><span class="value">24 மனை தெலுங்கு செட்டியார்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">உப ஜாதி:</span
+                ><span class="value">தகவல் கிடைக்கவில்லை</span>
+              </div>
+              <div class="detail-row">
+                <span class="label"
+                  >மற்ற ஜாதியுடன் திருமணம் செய்ய விருப்பமா:</span
+                ><span class="value">இல்லை</span>
+              </div>
+            </div>
+          </div>
+          <!-- Education / Profession Information Section -->
+          <div class="section">
+            <div class="details-header">
+              <h3>
+                <i class="fa fa-graduation-cap"></i> கல்வி / தொழில்துறை தகவல்
+              </h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">அதிக கல்வி:</span
+                ><span class="value">பி.ஆர்.சி.எச்.</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">கூடுதல் பட்டம்:</span
+                ><span class="value">பி.ஆர்.சி.எச்.</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">வேலை செய்யும் துறை:</span
+                ><span class="value">அரசு</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தொழில்:</span
+                ><span class="value">சிவில் இன்ஜினியர்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">ஆண்டு வருமானம்:</span
+                ><span class="value">₹13,00,000</span>
+              </div>
+            </div>
+          </div>
+          <!---------Family Details------------>
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-graduation-cap"></i> குடும்ப விவரங்கள்</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">குடும்ப வகை:</span
+                ><span class="value">சாமான்யம்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">குடும்ப மதிப்பு:</span
+                ><span class="value">அரசு</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தந்தை தொழில்:</span
+                ><span class="value">அரசு</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தாய் தொழில்:</span
+                ><span class="value">சிவில் பொறியாளர்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">திருமணமான சகோதரர்கள்:</span
+                ><span class="value">ஒருவர்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">திருமணமான சகோதரிகள்:</span
+                ><span class="value">இருவர்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">குடும்ப நிலை:</span
+                ><span class="value">சீரானது</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தந்தையின் பெயர்:</span
+                ><span class="value">குமார்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தாயின் பெயர்:</span
+                ><span class="value">சுஜாதா</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">சகோதரர்களின் எண்ணிக்கை:</span
+                ><span class="value">2</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">சகோதரிகளின் எண்ணிக்கை:</span
+                ><span class="value">3</span>
+              </div>
+            </div>
+          </div>
+          <!-- Location Information Section -->
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-map-marker"></i> இருப்பிடம்</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">பிறந்த இடம்:</span
+                ><span class="value">சென்னை</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தற்போதைய இருப்பிடம்:</span
+                ><span class="value">பெங்களூரு</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">நாடு:</span
+                ><span class="value">இந்தியா</span>
+              </div>
+            </div>
+          </div>
+          <!-- Habits Section -->
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-cutlery"></i> பழக்கங்கள்</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">உணவு பழக்கங்கள்:</span
+                ><span class="value">சைவம்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">புகைத்தல்:</span
+                ><span class="value">இல்லை</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">மது பருகுதல்:</span
+                ><span class="value">இல்லை</span>
+              </div>
+            </div>
+          </div>
+          <!-------------------- Physical Attributes------------>
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-user"></i> உடல் பண்புகள்</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தவும்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">உயரம்:</span
+                ><span class="value">5.8 அடி</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">எடை:</span
+                ><span class="value">65 கிலோ</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">உடல் அமைப்பு:</span
+                ><span class="value">சாதாரணம்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">உடல் நிலை:</span
+                ><span class="value">சீரானது</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">நிறம்:</span
+                ><span class="value">கலர்/காவி</span>
+              </div>
+            </div>
+          </div>
+          <!-------------------- Heroscope details------------>
+          <div class="section">
+            <div class="details-header">
+              <h3><i class="fa fa-graduation-cap"></i> ஜாதகத் தகவல்கள்</h3>
+              <button class="edit-btn">
+                <i class="fa fa-pencil"></i> திருத்தம்
+              </button>
+            </div>
+            <div class="details-content">
+              <div class="detail-row">
+                <span class="label">தோஷம் உள்ளதா? :</span>
+                <span class="value">இல்லை</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">தோஷ வகை:</span>
+                <span class="value">கலதோஷம்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">ராசி/சந்திர அடைமொழி :</span>
+                <span class="value">மேஷம்</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">நட்சத்திரம் :</span>
+                <span class="value">அஸ்வினி</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">பிறந்த நேரம் :</span>
+                <span class="value">மாலை 6:30</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">பிறந்த இடம் :</span>
+                <span class="value">சென்னை</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-      <!-- Basic Details Section -->
-  <main class="profile" id="profile" >
-    <div class="profile-container">
+    <!-----------------------Edit profile----------------------->
+    <main class="edit-profile" id="edit_profile">
+      <h2>சுயவிவரத்தை திருத்தவும்</h2>
       <div class="photo-upload-card">
         <div class="photo-upload-header">
-          <h2><i class="fa fa-camera"></i> Upload Profile Photo</h2>
+          <h2><i class="fa fa-camera"></i> புகைப்படத்தை பதிவேற்றவும்</h2>
         </div>
         <div class="photo-upload-content">
           <div class="photo-preview">
-            <img src="assets/images/img4.png" alt="Profile Photo" class="profile-photo">
+            <img
+              src="assets/images/img4.png"
+              alt="சுயவிவர புகைப்படம்"
+              class="profile-photo"
+              id="photoPreview"
+            />
           </div>
-          <button class="upload-btn"><i class="fa fa-upload"></i> Upload Photo</button>
+          <input
+            type="file"
+            id="photoUpload"
+            accept="image/*"
+            style="display: none"
+          />
+          <button
+            class="upload-btn"
+            onclick="document.getElementById('photoUpload').click();"
+          >
+            <i class="fa fa-upload"></i> புகைப்படத்தை தேர்ந்தெடுக்கவும்
+          </button>
         </div>
       </div>
-      <h2>Profile Details</h2>
-      <p class="instruction">
-        Edit your profile details by clicking the pencil icon <i class="fa fa-pencil"></i>.
-      </p>
+
       <div class="section">
         <div class="details-header">
-          <h3><i class="fa fa-book"></i> Basic Details</h3>
-          <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
+          <h3>அடிப்படை விவரங்கள்</h3>
+          <button class="edit-btn">திருத்தவும்</button>
         </div>
         <div class="details-content">
-          <div class="detail-row"><span class="label">User Name:</span><span class="value">Saanvi Acharya</span></div>
-          <div class="detail-row"><span class="label">Email:</span><span class="value">userfemale1@gamil.com</span></div>
-          <div class="detail-row"><span class="label">Mobile No:</span><span class="value">+91-9328530201</span></div>
-          <div class="detail-row"><span class="label">Gender:</span><span class="value">Female</span></div>
+          <div class="detail-row">
+            <span class="label">பெயர்:</span
+            ><input type="text" value="சான்வி ஆச்சார்யா" />
+          </div>
+          <div class="detail-row">
+            <span class="label">மின்னஞ்சல்:</span
+            ><input type="email" value="userfemale1@gamil.com" />
+          </div>
+          <div class="detail-row">
+            <span class="label">கைபேசி எண்:</span
+            ><input type="tel" value="+91-9328530201" />
+          </div>
+          <div class="detail-row">
+            <span class="label">பாலினம்:</span>
+            <select>
+              <option value="Female">பெண்</option>
+              <option value="Male">ஆண்</option>
+              <option value="Other">மற்றவை</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="details-header">
+          <h3>பிற தகவல்கள்</h3>
+          <button class="edit-btn">திருத்தவும்</button>
+        </div>
+        <div class="details-content">
+          <div class="detail-row">
+            <span class="label">பிறந்த தேதி:</span
+            ><input type="date" value="1975-02-05" />
+          </div>
+          <div class="detail-row">
+            <span class="label">திருமண நிலை:</span>
+            <select>
+              <option value="Never Married">திருமணம் ஆகவில்லை</option>
+              <option value="Married">திருமணமானவர்</option>
+            </select>
+          </div>
+          <div class="detail-row">
+            <span class="label">மொழி:</span
+            ><input type="text" value="அங்கிகா" />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="details-header">
+          <h3>என்னை பற்றி</h3>
+          <button class="edit-btn">திருத்தவும்</button>
+        </div>
+        <div class="details-content">
+          <textarea id="aboutMe" rows="4" cols="50">
+உங்களைப் பற்றி எழுதுங்கள். உங்கள் சொந்த தன்மை, சுவாசம், குடும்பம் போன்றவை குறித்து எழுதலாம்.</textarea
+          >
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="details-header">
+          <h3>மத விவரங்கள்</h3>
+          <button class="edit-btn">திருத்தவும்</button>
+        </div>
+        <div class="details-content">
+          <div class="detail-row">
+            <span class="label">மதம்:</span>
+            <select>
+              <option value="Hindu">இந்து</option>
+              <option value="Muslim">முஸ்லிம்</option>
+              <option value="Christian">கிறிஸ்தவர்</option>
+            </select>
+          </div>
+          <div class="detail-row">
+            <span class="label">ஜாதி:</span
+            ><input type="text" value="24 மணை தெலுங்கு செட்டியார்" />
+          </div>
+          <div class="detail-row">
+            <span class="label">உப ஜாதி:</span
+            ><input type="text" value="அமுக்கம் இல்லை" />
+          </div>
+          <div class="detail-row">
+            <span class="label">மற்ற ஜாதியில் திருமணம் செய்ய ஆர்வம்:</span>
+            <select>
+              <option value="Yes">ஆம்</option>
+              <option value="No">இல்லை</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="details-header">
+          <h3>கல்வி / தொழில் விவரங்கள்</h3>
+          <button class="edit-btn">திருத்தவும்</button>
+        </div>
+        <div class="details-content">
+          <div class="detail-row">
+            <label>உயர்ந்த கல்வி:</label><input type="text" value="B Arch" />
+          </div>
+          <div class="detail-row">
+            <label>கூடுதல் டிகிரி:</label><input type="text" value="B Arch" />
+          </div>
+          <div class="detail-row">
+            <label>வேலை செய்தால்:</label><input type="text" value="அரசு" />
+          </div>
+          <div class="detail-row">
+            <label>தொழில்:</label
+            ><input type="text" value="சிவில் இன்ஜினியர்" />
+          </div>
+          <div class="detail-row">
+            <label>ஆண்டு வருமானம்:</label
+            ><input type="text" value="13,00,000" />
+          </div>
         </div>
       </div>
       <div class="section">
-        <div class="details-content">
-          <div class="detail-row"><span class="label">Date of Birth:</span><span class="value">05/02/1975</span></div>
-          <div class="detail-row"><span class="label">Marital Status:</span><span class="value">Never Married</span></div>
-          <div class="detail-row"><span class="label">Mother Tongue:</span><span class="value">Angika</span></div>
-          <div class="detail-row"><span class="label">Profile Created By:</span><span class="value">Self</span></div>
-        </div>
-      </div>
-
-      <!-- Other Sections -->
-      <div class="additional-sections">
-        <!-- About Me Section -->
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-star"></i> About Me</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <p class="about-content">
-            Write some about you. For example, what kind of person you are, about your personality, hobbies, and family, etc.
-          </p>
-        </div>
-    
-        <!-- Religion Information Section -->
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-book"></i> Religion Information</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <div class="details-content">
-            <div class="detail-row"><span class="label">Religion:</span><span class="value">Hindu</span></div>
-            <div class="detail-row"><span class="label">Caste:</span><span class="value">24 Manai Telugu Chettiar</span></div>
-            <div class="detail-row"><span class="label">Sub Caste:</span><span class="value">Not Available</span></div>
-            <div class="detail-row"><span class="label">Willing to marry in other caste:</span><span class="value">No</span></div>
-          </div>
-        </div>
-    
-        <!-- Education / Profession Information Section -->
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-graduation-cap"></i> Education / Profession Information</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <div class="details-content">
-            <div class="detail-row"><span class="label">Highest Education:</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Additional Degree:</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Employed in:</span><span class="value">Government</span></div>
-            <div class="detail-row"><span class="label">Occupation:</span><span class="value">Civil Engineer</span></div>
-            <div class="detail-row"><span class="label">Annual Income:</span><span class="value">13,00,000</span></div>
-          </div>
-        </div>
-
-        <!---------Family Details------------>
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-graduation-cap"></i> Family Details</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <div class="details-content">
-            <div class="detail-row"><span class="label">Family Type :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Family Value :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Father Occupation :</span><span class="value">Government</span></div>
-            <div class="detail-row"><span class="label">Mother Occupation :</span><span class="value">Civil Engineer</span></div>
-            <div class="detail-row"><span class="label">Married Brothers : </span><span class="value">13,00,000</span></div>
-            <div class="detail-row"><span class="label">Married Sisters : </span><span class="value">13,00,000</span></div>
-            <div class="detail-row"><span class="label">Family status : </span><span class="value">13,00,000</span></div>
-            <div class="detail-row"><span class="label">Father Name: </span><span class="value">13,00,000</span></div>
-            <div class="detail-row"><span class="label">Mother Name : </span><span class="value">13,00,000</span></div>
-            <div class="detail-row"><span class="label">No. of Brothers : </span><span class="value">13,00,000</span></div>
-            <div class="detail-row"><span class="label">No. of sisters : </span><span class="value">13,00,000</span></div>
-          </div>
-        </div>
-        <!------------Location Information------>
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-graduation-cap"></i> Location Information</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <div class="details-content">
-            <div class="detail-row"><span class="label">Country Living In :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">State Living In :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">City Living In :</span><span class="value">Government</span></div>
-          </div>
-        </div>
-        <!---------Habits And Hobbies------------->
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-graduation-cap"></i> Habits And Hobbies</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <div class="details-content">
-            <div class="detail-row"><span class="label">Eating Habits  :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Drinking Habits:</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Smoking Habits :</span><span class="value">Government</span></div>
-          </div>
-        </div>
-        <!-------------------- Physical Attributes------------>
-        <div class="section">
-          <div class="details-header">
-            <h3><i class="fa fa-graduation-cap"></i> Physical Attributes</h3>
-            <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-          </div>
-          <div class="details-content">
-            <div class="detail-row"><span class="label">Height  :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Weight :</span><span class="value">B Arch</span></div>
-            <div class="detail-row"><span class="label">Body Type :</span><span class="value">Government</span></div>
-            <div class="detail-row"><span class="label">Physical Status :</span><span class="value">Government</span></div>
-            <div class="detail-row"><span class="label">Complexion :</span><span class="value">Government</span></div>
-          </div>
-          </div>
-          <!-------------------- Horoscope Information------------>
-          <div class="section">
-            <div class="details-header">
-              <h3><i class="fa fa-graduation-cap"></i> Horoscope Information</h3>
-              <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-            </div>
-            <div class="details-content">
-              <div class="detail-row"><span class="label">Have Dosh?  :</span><span class="value">B Arch</span></div>
-              <div class="detail-row"><span class="label">Dosh Type:</span><span class="value">B Arch</span></div>
-              <div class="detail-row"><span class="label">Raasi/Moonsign :</span><span class="value">Government</span></div>
-              <div class="detail-row"><span class="label">Star :</span><span class="value">Government</span></div>
-              <div class="detail-row"><span class="label">Birth Time :</span><span class="value">Government</span></div>
-              <div class="detail-row"><span class="label">Birth Place :</span><span class="value">Government</span></div>
-
-            </div>
-        </div>
-    </div>
-
-  </main>
-
-  <!-----------------------Edit profile----------------------->
-  <main class="edit-profile" id="edit_profile">
-    <h2>Edit Profile</h2>
-    <div class="photo-upload-card">
-      <div class="photo-upload-header">
-        <h2><i class="fa fa-camera"></i> Upload Profile Photo</h2>
-      </div>
-      <div class="photo-upload-content">
-        <!-- Preview of the uploaded photo -->
-        <div class="photo-preview">
-          <img src="assets/images/img4.png" alt="Profile Photo" class="profile-photo" id="photoPreview">
-        </div>
-        <!-- File input for photo upload -->
-        <input type="file" id="photoUpload" accept="image/*" style="display: none;">
-        <button class="upload-btn" onclick="document.getElementById('photoUpload').click();">
-          <i class="fa fa-upload"></i> Upload Photo
-        </button>
-      </div>
-    </div>
-    
-
-    <div class="section">
         <div class="details-header">
-            <h3>Basic Details</h3>
-            <button class="edit-btn">Edit</button>
+          <h3><i class="fa fa-graduation-cap"></i> குடும்ப விவரங்கள்</h3>
+          <button class="edit-btn">
+            <i class="fa fa-pencil"></i> திருத்தவும்
+          </button>
         </div>
         <div class="details-content">
-            <div class="detail-row"><span class="label">User Name:</span><input type="text" value="Saanvi Acharya"></div>
-            <div class="detail-row"><span class="label">Email:</span><input type="email" value="userfemale1@gamil.com"></div>
-            <div class="detail-row"><span class="label">Mobile No:</span><input type="tel" value="+91-9328530201"></div>
-            <div class="detail-row"><span class="label">Gender:</span>
-                <select>
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
+          <div class="detail-row">
+            <label for="family-type">குடும்ப வகை:</label>
+            <input type="text" id="family-type" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="family-value">குடும்ப மதிப்புகள்:</label>
+            <input type="text" id="family-value" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="father-occupation">தந்தையின் தொழில்:</label>
+            <input type="text" id="father-occupation" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="mother-occupation">தாயின் தொழில்:</label>
+            <input type="text" id="mother-occupation" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="married-brothers">திருமணமான சகோதரர்கள்:</label>
+            <input type="number" id="married-brothers" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="married-sisters">திருமணமான சகோதரிகள்:</label>
+            <input type="number" id="married-sisters" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="family-status">குடும்ப நிலை:</label>
+            <input type="text" id="family-status" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="father-name">தந்தையின் பெயர்:</label>
+            <input type="text" id="father-name" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="mother-name">தாயின் பெயர்:</label>
+            <input type="text" id="mother-name" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="no-of-brothers">சகோதரர்கள் எண்ணிக்கை:</label>
+            <input type="number" id="no-of-brothers" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="no-of-sisters">சகோதரிகள் எண்ணிக்கை:</label>
+            <input type="number" id="no-of-sisters" value="" />
+          </div>
         </div>
-    </div>
-
-    <div class="section">
+      </div>
+      <div class="section">
         <div class="details-header">
-            <h3>Other Details</h3>
-            <button class="edit-btn">Edit</button>
+          <h3><i class="fa fa-map-marker"></i> இருப்பிடம் விவரங்கள்</h3>
+          <button class="edit-btn">
+            <i class="fa fa-pencil"></i> திருத்தவும்
+          </button>
         </div>
         <div class="details-content">
-            <div class="detail-row"><span class="label">Date of Birth:</span><input type="date" value="1975-02-05"></div>
-            <div class="detail-row"><span class="label">Marital Status:</span>
-                <select>
-                    <option value="Never Married">Never Married</option>
-                    <option value="Married">Married</option>
-                </select>
-            </div>
-            <div class="detail-row"><span class="label">Mother Tongue:</span><input type="text" value="Angika"></div>
+          <div class="detail-row">
+            <label for="country-living">தற்போது வசிக்கும் நாடு:</label>
+            <input type="text" id="country-living" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="state-living">தற்போது வசிக்கும் மாநிலம்:</label>
+            <input type="text" id="state-living" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="city-living">தற்போது வசிக்கும் நகரம்:</label>
+            <input type="text" id="city-living" value="" />
+          </div>
         </div>
-    </div>
-
-    <div class="section">
+      </div>
+      <div class="section">
         <div class="details-header">
-            <h3>About Me</h3>
-            <button class="edit-btn">Edit</button>
+          <h3>
+            <i class="fa fa-heart"></i> பழக்கவழக்கங்கள் மற்றும் விருப்பங்கள்
+          </h3>
+          <button class="edit-btn">
+            <i class="fa fa-pencil"></i> திருத்தவும்
+          </button>
         </div>
         <div class="details-content">
-            <textarea id="aboutMe" rows="4" cols="50">Write something about yourself. For example, what kind of person you are, about your personality, hobbies, and family, etc.</textarea>
+          <div class="detail-row">
+            <label for="eating-habits">உணவு பழக்கங்கள்:</label>
+            <input type="text" id="eating-habits" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="drinking-habits">குடிப்பழக்கம்:</label>
+            <input type="text" id="drinking-habits" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="smoking-habits">புகைப்பழக்கம்:</label>
+            <input type="text" id="smoking-habits" value="" />
+          </div>
         </div>
-    </div>
-
-    <div class="section">
+      </div>
+      <div class="section">
         <div class="details-header">
-            <h3>Religion Information</h3>
-            <button class="edit-btn">Edit</button>
+          <h3><i class="fa-solid fa-user-tall"></i> உடல் அமைப்பு</h3>
+          <button class="edit-btn">
+            <i class="fa fa-pencil"></i> திருத்தவும்
+          </button>
         </div>
         <div class="details-content">
-            <div class="detail-row"><span class="label">Religion:</span>
-                <select>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Muslim">Muslim</option>
-                    <option value="Christian">Christian</option>
-                </select>
-            </div>
-            <div class="detail-row"><span class="label">Caste:</span><input type="text" value="24 Manai Telugu Chettiar"></div>
-            <div class="detail-row"><span class="label">Sub Caste:</span><input type="text" value="Not Available"></div>
-            <div class="detail-row"><span class="label">Willing to marry in other caste:</span>
-                <select>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-      <div class="details-header">
-        <h3><i class="fa fa-graduation-cap"></i> Education / Profession Information</h3>
-        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-      </div>
-      <div class="details-content">
-        <div class="detail-row">
-          <label for="highest-education">Highest Education:</label>
-          <input type="text" id="highest-education" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="additional-degree">Additional Degree:</label>
-          <input type="text" id="additional-degree" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="employed-in">Employed in:</label>
-          <input type="text" id="employed-in" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="occupation">Occupation:</label>
-          <input type="text" id="occupation" value="Civil Engineer" />
-        </div>
-        <div class="detail-row">
-          <label for="annual-income">Annual Income:</label>
-          <input type="text" id="annual-income" value="13,00,000" />
+          <div class="detail-row">
+            <label for="height">உயரம்:</label>
+            <input type="text" id="height" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="weight">எடை:</label>
+            <input type="text" id="weight" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="body-type">உடலமைப்பு:</label>
+            <input type="text" id="body-type" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="physical-status">உடல்நிலை:</label>
+            <input type="text" id="physical-status" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="complexion">முகத்தின் நிறம்:</label>
+            <input type="text" id="complexion" value="" />
+          </div>
         </div>
       </div>
-    </div>
-    
+      <div class="section">
+        <div class="details-header">
+          <h3><i class="fa-solid fa-star"></i> ஜாதகம் விவரங்கள்</h3>
+          <button class="edit-btn">
+            <i class="fa fa-pencil"></i> திருத்தவும்
+          </button>
+        </div>
+        <div class="details-content">
+          <div class="detail-row">
+            <label for="have-dosh">தோஷம் உள்ளதா?</label>
+            <input type="text" id="have-dosh" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="dosh-type">தோஷ வகை:</label>
+            <input type="text" id="dosh-type" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="raasi">ராகம்/சந்திரன்:</label>
+            <input type="text" id="raasi" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="star">நட்சத்திரம்:</label>
+            <input type="text" id="star" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="birth-time">பிறந்த நேரம்:</label>
+            <input type="text" id="birth-time" value="" />
+          </div>
+          <div class="detail-row">
+            <label for="birth-place">பிறந்த இடம்:</label>
+            <input type="text" id="birth-place" value="" />
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <div class="section">
-      <div class="details-header">
-        <h3><i class="fa fa-graduation-cap"></i> Family Details</h3>
-        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-      </div>
-      <div class="details-content">
-        <div class="detail-row">
-          <label for="family-type">Family Type:</label>
-          <input type="text" id="family-type" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="family-value">Family Value:</label>
-          <input type="text" id="family-value" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="father-occupation">Father Occupation:</label>
-          <input type="text" id="father-occupation" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="mother-occupation">Mother Occupation:</label>
-          <input type="text" id="mother-occupation" value="Civil Engineer" />
-        </div>
-        <div class="detail-row">
-          <label for="married-brothers">Married Brothers:</label>
-          <input type="number" id="married-brothers" value="13" />
-        </div>
-        <div class="detail-row">
-          <label for="married-sisters">Married Sisters:</label>
-          <input type="number" id="married-sisters" value="13" />
-        </div>
-        <div class="detail-row">
-          <label for="family-status">Family Status:</label>
-          <input type="text" id="family-status" value="13,00,000" />
-        </div>
-        <div class="detail-row">
-          <label for="father-name">Father Name:</label>
-          <input type="text" id="father-name" value="13,00,000" />
-        </div>
-        <div class="detail-row">
-          <label for="mother-name">Mother Name:</label>
-          <input type="text" id="mother-name" value="13,00,000" />
-        </div>
-        <div class="detail-row">
-          <label for="no-of-brothers">No. of Brothers:</label>
-          <input type="number" id="no-of-brothers" value="13" />
-        </div>
-        <div class="detail-row">
-          <label for="no-of-sisters">No. of Sisters:</label>
-          <input type="number" id="no-of-sisters" value="13" />
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="details-header">
-        <h3><i class="fa fa-graduation-cap"></i> Location Information</h3>
-        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-      </div>
-      <div class="details-content">
-        <div class="detail-row">
-          <label for="country-living">Country Living In:</label>
-          <input type="text" id="country-living" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="state-living">State Living In:</label>
-          <input type="text" id="state-living" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="city-living">City Living In:</label>
-          <input type="text" id="city-living" value="Government" />
-        </div>
-      </div>
-    </div>
-    
-    <!--------- Habits And Hobbies ----------->
-    <div class="section">
-      <div class="details-header">
-        <h3><i class="fa fa-graduation-cap"></i> Habits And Hobbies</h3>
-        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-      </div>
-      <div class="details-content">
-        <div class="detail-row">
-          <label for="eating-habits">Eating Habits:</label>
-          <input type="text" id="eating-habits" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="drinking-habits">Drinking Habits:</label>
-          <input type="text" id="drinking-habits" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="smoking-habits">Smoking Habits:</label>
-          <input type="text" id="smoking-habits" value="Government" />
-        </div>
-      </div>
-    </div>
-    
-    <!--------- Physical Attributes ----------->
-    <div class="section">
-      <div class="details-header">
-        <h3><i class="fa fa-graduation-cap"></i> Physical Attributes</h3>
-        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-      </div>
-      <div class="details-content">
-        <div class="detail-row">
-          <label for="height">Height:</label>
-          <input type="text" id="height" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="weight">Weight:</label>
-          <input type="text" id="weight" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="body-type">Body Type:</label>
-          <input type="text" id="body-type" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="physical-status">Physical Status:</label>
-          <input type="text" id="physical-status" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="complexion">Complexion:</label>
-          <input type="text" id="complexion" value="Government" />
-        </div>
-      </div>
-    </div>
-    
-    <!--------- Horoscope Information ----------->
-    <div class="section">
-      <div class="details-header">
-        <h3><i class="fa fa-graduation-cap"></i> Horoscope Information</h3>
-        <button class="edit-btn"><i class="fa fa-pencil"></i> Edit</button>
-      </div>
-      <div class="details-content">
-        <div class="detail-row">
-          <label for="have-dosh">Have Dosh?</label>
-          <input type="text" id="have-dosh" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="dosh-type">Dosh Type:</label>
-          <input type="text" id="dosh-type" value="B Arch" />
-        </div>
-        <div class="detail-row">
-          <label for="raasi">Raasi/Moonsign:</label>
-          <input type="text" id="raasi" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="star">Star:</label>
-          <input type="text" id="star" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="birth-time">Birth Time:</label>
-          <input type="text" id="birth-time" value="Government" />
-        </div>
-        <div class="detail-row">
-          <label for="birth-place">Birth Place:</label>
-          <input type="text" id="birth-place" value="Government" />
-        </div>
-      </div>
-    </div>
-    
-    
-</main>
-
-
-
-
-  <footer class="footer footer-dark section-pt position-relative">
-    <div class="footer-content pb-3">
+    <footer class="footer footer-dark section-pt position-relative">
+      <div class="footer-content pb-3">
         <div class="container">
-            <div class="row">
-                <!-- Footer widget 1 -->
-                <div class="col-md-3">
-                    <div class="widget">
-                        <a href="index.html" class="footer-logo">
-                            <img class="navbar-brand-item" src="assets/images/logo.png" alt="Matrimony">
-                        </a>
-                        <p class="mt-3">Find your perfect match at Matrimony, where we help you connect with like-minded individuals. Start your journey to a happy life today!</p>
-                        <div class="widget address" style="background-image:url(assets/images/map.png);background-position:50% 20px;background-repeat:no-repeat;background-size:contain">
-                            <ul class="list-unstyled">
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-location-pin"></i>123/4 Marriage Lane, New York, US</li>
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-phone"></i>+1 555 987 6543</li>
-                                <li class="media mb-3"><i class="mr-3 display-8 icofont icofont-email"></i>support@matrimony.com</li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="row">
+            <!-- Footer widget 1 -->
+            <div class="col-md-3">
+              <div class="widget">
+                <a href="index.html" class="footer-logo">
+                  <img
+                    class="navbar-brand-item"
+                    src="assets/images/logo.png"
+                    alt="Matrimony"
+                  />
+                </a>
+                <p class="mt-3">
+                  Find your perfect match at Matrimony, where we help you
+                  connect with like-minded individuals. Start your journey to a
+                  happy life today!
+                </p>
+                <div
+                  class="widget address"
+                  style="
+                    background-image: url(assets/images/map.png);
+                    background-position: 50% 20px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                >
+                  <ul class="list-unstyled">
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-location-pin"></i
+                      >123/4 Marriage Lane, New York, US
+                    </li>
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-phone"></i>+1 555
+                      987 6543
+                    </li>
+                    <li class="media mb-3">
+                      <i class="mr-3 display-8 icofont icofont-email"></i
+                      >support@matrimony.com
+                    </li>
+                  </ul>
                 </div>
-                <!-- Footer widget 2 -->
-                <div class="col-md-2 col-sm-6">
-                    <div class="widget">
-                        <h5>Quick Links</h5>
-                        <ul class="nav flex-column primary-hover">
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                            <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
-                            <li class="nav-item"><a class="nav-link" href="terms.html">Terms and Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Footer widget 4 -->
-                <div class="col-md-3">
-                    <div class="widget bg-gradient p-4 all-text-white border-radius-3">
-                        <i class="icofont icofont-ui-email newsletter-icon"></i>
-                        <p class="mb-2">Subscribe to our newsletter for matrimonial advice, success stories, and more!</p>
-                        <div class="form-group mb-0">
-                            <input class="form-control border-white mb-3" type="email" placeholder="Enter your email...">
-                            <button class="btn btn-dark mb-0">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+            <!-- Footer widget 2 -->
+            <div class="col-md-2 col-sm-6">
+              <div class="widget">
+                <h5>Quick Links</h5>
+                <ul class="nav flex-column primary-hover">
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="terms.html"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- Footer widget 4 -->
-        </div>
-    </div>
-    <div class="divider mt-3"></div>
-    
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
-            
-                <div class="copyright-text">©2023 <a href="#!">Matrimony</a>. All Rights Reserved</div>
-                <!-- copyright links-->
-                <div class="copyright-links primary-hover mt-3 mt-md-0">
-                    <ul class="social-icons light">
-                        <li class="social-icons-item social-facebook">
-                            <a class="social-icons-link" href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="social-icons-item social-instagram">
-                            <a class="social-icons-link" href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="social-icons-item social-twitter">
-                            <a class="social-icons-link" href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="social-icons-item social-youtube">
-                            <a class="social-icons-link" href="#"><i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li class="social-icons-item social-vimeo">
-                            <a class="social-icons-link" href="#"><i class="fa fa-vimeo"></i></a>
-                        </li>
-                        <li class="social-icons-item social-pinterest">
-                            <a class="social-icons-link" href="#"><i class="fa fa-pinterest"></i></a>
-                        </li>
-                        <li class="social-icons-item social-gplus">
-                            <a class="social-icons-link" href="#"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                    </ul>
+            <div class="col-md-3">
+              <div
+                class="widget bg-gradient p-4 all-text-white border-radius-3"
+              >
+                <i class="icofont icofont-ui-email newsletter-icon"></i>
+                <p class="mb-2">
+                  Subscribe to our newsletter for matrimonial advice, success
+                  stories, and more!
+                </p>
+                <div class="form-group mb-0">
+                  <input
+                    class="form-control border-white mb-3"
+                    type="email"
+                    placeholder="Enter your email..."
+                  />
+                  <button class="btn btn-dark mb-0">Subscribe</button>
                 </div>
+              </div>
             </div>
+          </div>
+          <!-- Footer widget 4 -->
         </div>
-    </div>
-</footer>
+      </div>
+      <div class="divider mt-3"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <div class="footer-copyright">
+        <div class="container">
+          <div
+            class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left"
+          >
+            <div class="copyright-text">
+              ©2023 <a href="#!">Matrimony</a>. All Rights Reserved
+            </div>
+            <!-- copyright links-->
+            <div class="copyright-links primary-hover mt-3 mt-md-0">
+              <ul class="social-icons light">
+                <li class="social-icons-item social-facebook">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-instagram">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-twitter">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-youtube">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-vimeo">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-vimeo"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-pinterest">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="social-icons-item social-gplus">
+                  <a class="social-icons-link" href="#"
+                    ><i class="fa fa-google-plus"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor-profile/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor-profile/php-email-form/validate.js"></script>
-  <script src="assets/vendor-profile/aos/aos.js"></script>
-  <script src="assets/vendor-profile/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor-profile/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor-profile/swiper/swiper-bundle.min.js"></script>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor-profile/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor-profile/php-email-form/validate.js"></script>
+    <script src="assets/vendor-profile/aos/aos.js"></script>
+    <script src="assets/vendor-profile/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor-profile/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor-profile/swiper/swiper-bundle.min.js"></script>
 
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

@@ -1823,17 +1823,17 @@ body {
 .form-group label {
   font-weight: 500;
 }
-.btn-primary{
+.btn-primary {
   margin-top: 30px;
 }
 /* Custom Styles for small screens */
 @media (max-width: 576px) {
   .form-container {
-      margin-top: 20px;
-      padding: 20px;
+    margin-top: 20px;
+    padding: 20px;
   }
   .form-group {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 .second-card {
@@ -1843,7 +1843,7 @@ body {
   gap: 20px; /* Add space between image and content */
   padding: 20px; /* Add padding for aesthetics */
 }
-img{
+img {
   border-radius: 20px;
 }
 .second-card img {
@@ -1875,13 +1875,13 @@ img{
 /* Responsive Design for Small Screens */
 @media (max-width: 878px) {
   .second-card {
-      flex-direction: column; /* Stack image and content vertically */
-      text-align: center; /* Center-align content */
+    flex-direction: column; /* Stack image and content vertically */
+    text-align: center; /* Center-align content */
   }
 
   .second-card img {
-      max-width: 80%; /* Scale down the image */
-      margin: 0 auto; /* Center image */
+    max-width: 80%; /* Scale down the image */
+    margin: 0 auto; /* Center image */
   }
   .second-card img {
     max-width: 80%; /* Make image responsive */
@@ -1914,9 +1914,8 @@ img{
   align-items: center;
   max-width: 1100px;
   width: 100%;
-  position: relative; 
-  padding-left: 15%; 
-  
+  position: relative;
+  padding-left: 15%;
 }
 .h4-card {
   color: red;
@@ -1934,24 +1933,23 @@ img{
   font-size: 1.25 rem;
   transform: translateY(-50%);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-
 }
-#left-male{
+#left-male {
   z-index: 1;
   left: 170px;
- }
-#left-female{
+}
+#left-female {
   z-index: 1;
   left: 170px;
- }
- #right-female{
+}
+#right-female {
   z-index: 2;
   right: -0%;
- }
- #right-male{
+}
+#right-male {
   z-index: 2;
   right: -0%;
- }
+}
 
 .wrapper .carousel {
   display: grid;
@@ -1962,13 +1960,12 @@ img{
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
-
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
 }
-.carousel{
+.carousel {
   margin-left: 16%;
 }
 
@@ -2012,7 +2009,6 @@ img{
   width: 145px;
   height: 145px;
   border-radius: 50%;
-
 }
 
 .card .img img {
@@ -2032,52 +2028,49 @@ img{
 .card span {
   color: #6a6d78;
   font-size: 1.31rem;
-
 }
 
 @media screen and (max-width: 1280px) {
   .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
-
+    grid-auto-columns: calc((100% / 2) - 9px);
   }
-  .wrapper{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   right: 6%;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 6%;
   }
 
-  #left-male{
+  #left-male {
     z-index: 1;
     left: 170px;
     display: none;
   }
-  #left-female{
+  #left-female {
     z-index: 1;
     left: 170px;
     display: none;
   }
-  #right-female{
+  #right-female {
     z-index: 2;
     right: -0%;
   }
-  #right-male{
+  #right-male {
     z-index: 2;
     right: -0%;
   }
-  #female-wrapper{
+  #female-wrapper {
     padding-top: 100px;
   }
-  }
-  .carousel{
-    margin-left: 0%;
-  }
+}
+.carousel {
+  margin-left: 0%;
+}
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
-      grid-auto-columns: 100%;
+    grid-auto-columns: 100%;
   }
-  .wrapper{
+  .wrapper {
     margin-top: -100px;
   }
 }
-

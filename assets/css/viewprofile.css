@@ -100,7 +100,7 @@ h2 {
   padding: 5px 0;
   border-bottom: 1px solid #eee;
 }
-@media (max-width: 355.98px) {
+@media (max-width: 405.98px) {
   .detail-row {
     flex-wrap:nowrap;
     padding: 5px 0;

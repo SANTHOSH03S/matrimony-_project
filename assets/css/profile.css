@@ -1740,9 +1740,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 .hero {
   display: flex;
   justify-content: center;

@@ -1888,7 +1888,6 @@ section,
 .hidden {
   display: none;
 }
-
 input[type="file"] {
   display: block;
   margin: 0 auto;

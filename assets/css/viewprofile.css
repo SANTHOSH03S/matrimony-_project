@@ -96,7 +96,6 @@ h2 {
 }
 
 .detail-row {
-  flex-wrap: wrap;
   padding: 5px 0;
   border-bottom: 1px solid #eee;
 }

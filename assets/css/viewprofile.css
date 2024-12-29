@@ -96,9 +96,16 @@ h2 {
 }
 
 .detail-row {
-  
+  flex-wrap: wrap;
   padding: 5px 0;
   border-bottom: 1px solid #eee;
+}
+@media (max-width: 355.98px) {
+  .detail-row {
+    flex-wrap:nowrap;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .label {
